@@ -40,19 +40,19 @@ plugins:
   - jekyll-sitemap
 
 # 포함 및 제외 파일/디렉토리 설정
-exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-include:
-  - .htaccess
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+# include:
+#   - .htaccess
 
 # 빌드 시 압축을 사용하여 사이트 속도 향상
 # 이 기능을 사용하려면 jekyll-compress 이미지 플러그인이 필요할 수 있음
