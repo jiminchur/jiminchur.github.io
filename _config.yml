@@ -1,45 +1,46 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
 title: jiminchur
 email: your-email@example.com
-description: >-
-  여기에 새 사이트를 위한 멋진 설명을 작성하세요. _config.yml에서 이 줄을 편집할 수 있습니다. 이것은 Google 검색 결과 및 feed.xml 사이트 설명에 있는 문서 헤드 메타에 표시됩니다.
-baseurl: "" # 사이트의 하위 경로, 예: /blog
-url: "https://jiminchur.github.io" # 사이트의 기본 호스트 이름 & 프로토콜, 예: http://example.com
-twitter_username: jekyllrb
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://jiminchur.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  jiminchur
 
-# 사이트의 SEO를 향상시키기 위해 추가
-seo_tagline: jiminchur의 블로그
-google_site_verification: "Google에서 제공하는 사이트 검증 코드"
-bing_site_verification: "Bing에서 제공하는 사이트 검증 코드"
-
-# 블로그 작성자 정보 - 사이트의 여러 부분에서 사용될 수 있음
-author:
-  name: 김지민
-  bio: 여행, 코딩, 그리고 커피를 사랑하는 개발자
-  avatar: "/assets/images/bio-photo.jpg"
-
-# 소셜 미디어 링크 추가
-social_links:
-  twitter: https://twitter.com/jekyllrb
-  github: https://github.com/jiminchur
-  linkedin: https://www.linkedin.com/in/jiminchur/
-  instagram: https://www.instagram.com/jiminchur
-
-# 댓글 시스템 - disqus (선택적)
-comments:
-  provider: "disqus"
-  disqus:
-    shortname: "your-disqus-shortname"
-
-# Google Analytics (선택적)
-google_analytics: "UA-XXXXX-Y"
-
-# 사이트 맵 생성
+# Build settings
+theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
 
-# 포함 및 제외 파일/디렉토리 설정
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
 # exclude:
 #   - .sass-cache/
 #   - .jekyll-cache/
@@ -51,9 +52,8 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-# include:
-#   - .htaccess
-
-# 빌드 시 압축을 사용하여 사이트 속도 향상
-# 이 기능을 사용하려면 jekyll-compress 이미지 플러그인이 필요할 수 있음
-compress_html: true
+# 블로그 작성자 정보 - 사이트의 여러 부분에서 사용될 수 있음
+author:
+  name: 지민철
+  bio: DataEnginer
+  # avatar: "/assets/images/bio-photo.jpg"
