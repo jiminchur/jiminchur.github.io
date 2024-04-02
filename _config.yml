@@ -28,10 +28,26 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jiminchur.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  jiminchur
 
+# 사이트의 SEO를 향상시키기 위해 추가
+seo_tagline: jiminchur의 블로그
+
+author:
+  name: 지민철
+  bio: DataEnginer
+  # avatar: "/assets/images/bio-photo.jpg"
+
+# 댓글 시스템 - disqus (선택적)
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "your-disqus-shortname"
+
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+
+compress_html: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -53,7 +69,3 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 # 블로그 작성자 정보 - 사이트의 여러 부분에서 사용될 수 있음
-author:
-  name: 지민철
-  bio: DataEnginer
-  # avatar: "/assets/images/bio-photo.jpg"
