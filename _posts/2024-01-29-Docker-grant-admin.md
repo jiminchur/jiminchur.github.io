@@ -1,8 +1,10 @@
 ---
-layout: post
 title:  "[Docker] 관리자 권한 부여하기"
-date:   2023-04-07 9:00:00 +0900
-categories: Docker
+categories: 
+    - Docker
+tag:
+    - Docker
+    - Admin
 ---
 # usermod
 

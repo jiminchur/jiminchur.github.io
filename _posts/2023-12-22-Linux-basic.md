@@ -1,8 +1,11 @@
 ---
-layout: post
 title:  "[Linux] Linux 기초"
-date:   2023-04-07 9:00:00 +0900
-categories: Linux
+categories: 
+  - Linux
+tag:
+  - Linux
+  - Basic
+  - 플레이데이터
 ---
 # linux 기초
 

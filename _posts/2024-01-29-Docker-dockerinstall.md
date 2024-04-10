@@ -1,8 +1,10 @@
 ---
-layout: post
 title:  "[Docker] Docker 설치하기"
-date:   2023-04-07 9:00:00 +0900
-categories: Docker
+categories: 
+  - Docker
+tag:
+  - Docker
+  - Install
 ---
 # Docker 설치방법
 

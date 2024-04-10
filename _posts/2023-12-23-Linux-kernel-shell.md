@@ -1,8 +1,12 @@
 ---
-layout: post
 title:  "[Linux] 커널과 셀"
-date:   2023-04-07 9:00:00 +0900
-categories: Linux
+categories: 
+    - Linux
+tag:
+    - Linux
+    - 플레이데이터
+    - Kernel
+    - Shell
 ---
 
 # 셀의 역할

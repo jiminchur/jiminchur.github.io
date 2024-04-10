@@ -1,8 +1,10 @@
 ---
-layout: post
 title:  "[Docker] 기본명령어"
-date:   2023-04-07 9:00:00 +0900
-categories: Docker
+categories: 
+    - Docker
+tag:    
+    - Docker
+    - 명령어모음집
 ---
 # 기본 명령어
 - 아래 명령어들은 권한부여가 된 상태에서 명령어 이다 만약 하지 않았더라면 앞에 sudo를 붙여 주어야 한다.

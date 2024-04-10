@@ -6,6 +6,7 @@ tags:
     - Linux
     - 용어
     - network
+    - Router
 ---
 
 ## 라우터 (Router)

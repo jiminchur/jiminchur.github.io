@@ -1,8 +1,12 @@
 ---
-layout: post
 title:  "[AWS] AWS cli세팅하기"
-date:   2023-04-07 9:00:00 +0900
-categories: AWS
+categories:
+    - AWS
+tag:
+    - AWS
+    - 환경세팅
+    - EC2
+    - AWS-Cli
 ---
 # Cli 환경에서 aws EC2관리하기
 - 다운로드하기

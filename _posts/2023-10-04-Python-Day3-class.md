@@ -1,8 +1,10 @@
 ---
 title:  "[Python] 함수와 클래스"
-date:   2023-10-04 9:00:00 +0900
 categories: 
-- Python
+    - Python
+tag:
+    - Python
+    - 플레이데이터
 ---
 # 수업전 전날 복습
 
