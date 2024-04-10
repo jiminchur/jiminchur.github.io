@@ -15,7 +15,7 @@ excerpt: "안녕하세요 지민철의 기술 블로그입니다."
 intro: 
   - excerpt: '제가 공부했던 부분들과 진행했던 프로젝트 일어났던 이슈들을 기록해 놨습니다.              잘못된 부분이나 궁금한 사항있으면 깃허브나 이메일을 통해 연락주세요'
 feature_row:
-  - image_path: assets/images/mainhnm.jpeg
+  - image_path: assets/images/mainhnm.jpg
     alt: "placeholder image 1"
     title: "HNM 사용자 구매정보 데이터로 추천시스템"
     excerpt: "HNM의 사용자 구매정보 데이터로 사용자가 구매했던 상품들과 유사한 상품을 추천해주는 웹 사이트"
@@ -29,7 +29,7 @@ feature_row:
     url: "https://github.com/jiminchur/Classification-Model_Profanity"
     btn_label: "Read More"
     btn_class: "btn--primary"
-  - image_path: /assets/images/maincloset.jpeg
+  - image_path: /assets/images/maincloset.jpg
     title: "스마트옷장"
     excerpt: "사용자의 옷들을 사진을 찍어 웹에 저장하고 그 옷들이 어떤종류인지 분류해주는 모델이 알아서 옷장을 관리해주고 코디 추천까지 해주는 웹 사이트"
     url: "https://github.com/jiminchur/Recommend-Model_Closet-Cody"
