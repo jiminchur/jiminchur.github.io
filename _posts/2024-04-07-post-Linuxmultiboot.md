@@ -1,13 +1,11 @@
 ---
 title:  "[Linux] 멀티부팅이란?"
 categories:
-  - Edge Case
+  - Linux
 tags:
-  - content
-  - css
-  - edge case
-  - lists
-  - markup
+  - Linux
+  - 용어
+  - network
 ---
 
 ## 멀티부팅
