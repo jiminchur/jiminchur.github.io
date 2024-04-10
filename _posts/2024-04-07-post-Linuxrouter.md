@@ -1,8 +1,11 @@
 ---
-layout: post
 title:  "[Linux] 라우터란?"
-date:   2024-04-09 9:00:00 +0900
-categories: Linux
+categories: 
+    - Linux
+tags:
+    - Linux
+    - 용어
+    - network
 ---
 
 ## 라우터 (Router)
