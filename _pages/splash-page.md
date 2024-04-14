@@ -13,7 +13,14 @@ header:
   # caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 excerpt: "안녕하세요 지민철의 기술 블로그입니다."
 intro: 
-  - excerpt: '제가 공부했던 부분들과 진행했던 프로젝트 일어났던 이슈들을 기록해 놨습니다.              잘못된 부분이나 궁금한 사항있으면 깃허브나 이메일을 통해 연락주세요'
+  - excerpt: '제가 공부했던 부분들과 진행했던 프로젝트 일어났던 이슈들을 기록해 놨습니다.'
+  - excerpt: '잘못된 부분이나 궁금한 사항있으면 깃허브나 이메일을 통해 연락주세요'
+  - url: "https://github.com/jiminchur/"
+    btn_label: "Github Link"
+    btn_class: "btn--primary"
+  - url: "ttlcc1364@gmail.com"
+    btn_label: "E-mail"
+    btn_class: "btn--primary"
 feature_row:
   - image_path: assets/images/mainhnm.jpg
     alt: "placeholder image 1"
