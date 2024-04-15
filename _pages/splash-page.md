@@ -64,8 +64,6 @@ feature_row:
 
 {% include feature_row id="intro" type="center" %}
 
-{% include contact_links.html url1="https://github.com/jiminchur/" btn_label1="Github Link" btn_class1="btn--primary" url2="mailto:ttlcc1364@gmail.com" btn_label2="E-mail" btn_class2="btn--primary" %}
-
 {% include feature_row %}
 
 <!-- {% include feature_row id="feature_row2" type="left" %}
