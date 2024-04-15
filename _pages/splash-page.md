@@ -3,18 +3,16 @@ title: "Data Engineer"
 layout: splash
 permalink: /
 date: 2016-03-23T11:48:41-04:00
-# header:
-#   overlay_color: "#000"
-#   overlay_filter: "0.5"
-#   overlay_image: /assets/images/background.png
-#   actions:
-    # - label: "Download"
-    #   url: "https://github.com/mmistakes/minimal-mistakes/"
-  # caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-# excerpt: "안녕하세요 지민철의 기술 블로그입니다.제가 공부했던 부분들을 기록해놨습니다 저의 대해서 알고싶으시면 아래링크로 들어와주세요"
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/background.png
+  actions:
+    - label: "About Me"
+      url: "https://jiminchur.github.io/about/"
+excerpt: "안녕하세요 지민철의 기술 블로그입니다"
 intro: 
-  - excerpt: '안녕하세요 지민철의 기술 블로그입니다.'
-  - excerpt: '제가 공부했던 부분들과 진행했던 프로젝트 일어났던 이슈들을 기록해 놨습니다.'
+  - excerpt: '제가 공부했던 부분들을 기록해 놨습니다.'
   - excerpt: '잘못된 부분이나 궁금한 사항있으면 Github나 E-mail을 통해 연락주세요'
 feature_row:
   - image_path: assets/images/mainhnm.jpg
