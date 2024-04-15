@@ -15,8 +15,6 @@ intro:
   - excerpt: '제가 공부했던 부분들을 기록해 놨습니다.'
   - excerpt: '잘못된 부분이나 궁금한 사항있으면 Github나 E-mail을 통해 연락주세요'
 feature_row:
-  - title: "Project"
-    excerpt: "그동안 진행했던 프로젝트 입니다."
   - image_path: assets/images/mainhnm.jpg
     alt: "placeholder image 1"
     title: "HNM 사용자 구매정보 데이터로 추천시스템"
