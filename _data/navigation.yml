@@ -6,8 +6,8 @@ main:
     url: https://jiminchur.github.io/about/
   - title: "Posts"
     url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
+  - title: "Study"
+    url: /study/
   # - title: "Sitemap"
   #   url: /sitemap/
   - title: "Category"
