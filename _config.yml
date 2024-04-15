@@ -298,8 +298,8 @@ defaults:
     values:
       layout: single
       author_profile: true
-    - scope:
-      path: ""
+  - scope:
+      path: "_docs"
       type: docs
     values:
       layout: single
