@@ -11,7 +11,10 @@ header:
     # - label: "Download"
     #   url: "https://github.com/mmistakes/minimal-mistakes/"
   # caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-excerpt: "안녕하세요 지민철의 기술 블로그입니다.제가 공부했던 부분들을 기록해놨습니다 저의 대해서 알고싶으시면 아래링크로 들어와주세요"
+excerpt: "안녕하세요 지민철의 기술 블로그입니다.        제가 공부했던 부분들을 기록해놨습니다.            저의 대해서 알고싶으시면 아래링크로 들어와주세요"
+  url: "https://github.com/jiminchur/Recommend-Model_Closet-Cody"
+  btn_label: "About Me"
+  btn_class: "btn--primary"
 feature_row:
   - image_path: assets/images/mainhnm.jpg
     alt: "placeholder image 1"
