@@ -1,7 +1,7 @@
 ---
 title: "Study"
 permalink: /study/
-layout: posts
+layout: archive
 author_profile: true
 feature_row:
   - image_path: assets/images/mainhnm.jpg
