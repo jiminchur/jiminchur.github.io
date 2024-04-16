@@ -14,14 +14,14 @@ excerpt: "안녕하세요 지민철의 기술 블로그입니다"
 intro: 
   - excerpt: '제가 공부했던 부분들을 기록해 놨습니다.'
   - excerpt: '잘못된 부분이나 궁금한 사항있으면 Github나 E-mail을 통해 연락주세요'
-# feature_row:
-#   - image_path: assets/images/mainhnm.jpg
-#     alt: "placeholder image 1"
-#     title: "HNM 사용자 구매정보 데이터로 추천시스템"
-#     excerpt: "HNM의 사용자 구매정보 데이터로 사용자가 구매했던 상품들과 유사한 상품을 추천해주는 웹 사이트"
-#     url: "https://github.com/jiminchur/Recommendation-System_User-Purchase-History"
-#     btn_label: "Read More"
-#     btn_class: "btn--primary"
+feature_row:
+  - image_path: assets/images/computer.png
+    alt: "placeholder image 1"
+    title: "야 너두 CS공부해!!"
+    excerpt: "명령어, 데이터, CPU, 메인 메모리와 캐시메모리, 보조기억장치와 입출력장치에 대한 공부 내용입니다."
+    url: "https://jiminchur.github.io/cs/CS2-1-1-2-1"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
 #   - image_path: /assets/images/mainbadword.png
 #     alt: "placeholder image 2"
 #     title: "비속어 필터링 & 댓글 감성분석 모델"
@@ -63,7 +63,7 @@ intro:
 
 {% include feature_row id="intro" type="center" %}
 
-<!-- {% include feature_row %} -->
+{% include feature_row %}
 
 <!-- {% include feature_row id="feature_row2" type="left" %}
 
