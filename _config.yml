@@ -323,7 +323,7 @@ defaults:
       read_time: false
       author_profile: false
       share: false
-      comments: true
+      comments: false
       sidebar:
         nav: "cs"
   - scope:
@@ -334,5 +334,5 @@ defaults:
       read_time: false
       author_profile: false
       share: false
-      comments: true
+      comments: false
 

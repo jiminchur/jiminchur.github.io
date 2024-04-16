@@ -1,11 +1,11 @@
 ---
-title: "야 너두 코딩할수있어"
-permalink: /study/
+title: "야 너두 Python할수있어!!"
+permalink: /python/
 layout: archive
 excerpt: "python기초입니다."
 author_profile: true
 feature_row:
-  - image_path: assets/images/mainhnm.jpg
+  - image_path: assets/images/python01.png
     alt: "placeholder image 1"
     title: "컴퓨터구조 (1)"
     excerpt: "명령어"
