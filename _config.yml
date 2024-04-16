@@ -305,7 +305,7 @@ defaults:
       layout: single
       author_profile: true
   - scope:
-      path: "_docs"
+      path: "_cs"
       type: docs
     values:
       layout: single
@@ -314,4 +314,4 @@ defaults:
       share: false
       comments: false
       sidebar:
-        nav: "docs"
+        nav: "cs"

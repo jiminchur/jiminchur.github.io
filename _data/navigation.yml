@@ -13,58 +13,54 @@ main:
   - title: "Category"
     url: https://jiminchur.github.io/categories/
 
-docs:
-  - title: Getting Started
+cs:
+  - title: "컴퓨터 구조"
     children:
-      - title: "Quick-Start Guide"
-        url: /docs/quick-start-guide/
-      - title: "Structure"
-        url: /docs/structure/
-      - title: "Installation"
-        url: /docs/installation/
-      - title: "Upgrading"
-        url: /docs/upgrading/
-  - title: Customization
+      - title: "소스코드에서 명령어로"
+        url: /cs/CS-1-1-2-1/
+      - title: "컴파일 - 명령어 관찰하기"
+        url: /cs/CS-1-1-2-2/
+      - title: "명령어 구조"
+        url: /cs/CS-1-1-2-3/
+      - title: "주소 지정"
+        url: /cs/CS-1-1-2-4/
+  - title: "데이터"
     children:
-      - title: "Configuration"
-        url: /docs/configuration/
-      - title: "Overriding Theme Defaults"
-        url: /docs/overriding-theme-defaults/
-      - title: "Navigation"
-        url: /docs/navigation/
-      - title: "UI Text"
-        url: /docs/ui-text/
-      - title: "Authors"
-        url: /docs/authors/
-      - title: "Layouts"
-        url: /docs/layouts/
-  - title: Content
+      - title: "이진수와 2의 보수"
+        url: /cs/CS-1-1-3-1/
+      - title: "부동 소수점"
+        url: /cs/CS-1-1-3-2/
+      - title: "문자 인코딩과 디코딩"
+        url: /cs/CS-1-1-3-3/
+  - title: "CPU"
     children:
-      - title: "Working with Posts"
-        url: /docs/posts/
-      - title: "Working with Pages"
-        url: /docs/pages/
-      - title: "Working with Collections"
-        url: /docs/collections/
-      - title: "Helpers"
-        url: /docs/helpers/
-      - title: "Utility Classes"
-        url: /docs/utility-classes/
-  - title: Extras
-    children:
-      - title: "Stylesheets"
-        url: /docs/stylesheets/
-      - title: "JavaScript"
-        url: /docs/javascript/
-  - title: Meta
-    children:
-      - title: "History"
-        url: /docs/history/
-      - title: "Contributing"
-        url: /docs/contributing/
-      - title: "Old 2.2 Docs"
-        url: /docs/docs-2-2/
-      - title: "License"
-        url: /docs/license/
-      - title: "Terms &amp; Privacy Policy"
-        url: /terms/
+      - title: "CPU 구성 요소"
+        url: /cs/CS-1-1-4-1/
+      - title: "명령어 사이클과 인터럽트"
+        url: /cs/CS-1-1-4-3/
+      - title: "멀티 코어와 멀티 프로세서"
+        url: /cs/CS-1-1-4-4/
+      - title: "명령어 병렬 처리 - 파이프라이닝"
+        url: /cs/CS-1-1-4-5/
+      - title: "비순차적명령어처리"
+        url: /cs/CS-1-1-4-6/
+  # - title: "메인 메모리와 캐시 메모리"
+  #   children:
+  #     - title: "RAM & ROM"
+  #       url: /cs/CS-1-1-5-1/
+  #     - title: "리틀 엔디안과 빅 엔디안"
+  #       url: /cs/CS-1-1-5-2/
+  #     - title: "주소 공간 - 논리 주소와 물리 주소"
+  #       url: /cs/CS-1-1-5-3/
+  #     - title: "저장 장치 계층 구조와 캐시 메모리"
+  #       url: /cs/CS-1-1-5-4/
+  #     - title: "캐시 친화적 코드"
+  #       url: /cs/CS-1-1-5-5/
+  # - title: "보조기억장치와 입출력장치"
+  #   children:
+  #     - title: "하드 디스크와 플래시 메모리"
+  #       url: /cs/CS-1-1-6-1/
+  #     - title: "RAID"
+  #       url: /cs/CS-1-1-6-2/
+  #     - title: "입출력 기법"
+  #       url: /cs/CS-1-1-6-3/
