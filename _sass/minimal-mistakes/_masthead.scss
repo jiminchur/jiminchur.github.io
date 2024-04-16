@@ -2,29 +2,20 @@
   MASTHEAD
   ========================================================================== */
 
-.masthead {
+  .masthead {
   position: relative;
-  border-bottom: 1px solid $border-color;
-  -webkit-animation: $intro-transition;
-  animation: $intro-transition;
-  -webkit-animation-delay: 0.15s;
-  animation-delay: 0.15s;
+  border-bottom: 1px solid #000; /* 적절한 색상으로 변경하세요 */
   z-index: 20;
 }
 
 .masthead__inner-wrap {
-  @include clearfix;
   margin-left: auto;
   margin-right: auto;
   padding: 1em;
   max-width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  font-family: $sans-serif-narrow;
+  font-family: sans-serif;
 }
 
 .masthead__inner-wrap nav {
@@ -40,17 +31,14 @@
 }
 
 .site-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: center;
-  align-self: center;
+  align-items: center;
   font-weight: bold;
 }
 
 .site-subtitle {
   display: block;
-  font-size: $type-size-8;
+  font-size: 16px; /* 적절한 크기로 변경하세요 */
 }
 
 .masthead__menu {
@@ -61,11 +49,7 @@
   clear: both;
 }
 
-.masthead__menu .site-nav {
-  margin-left: 0;
-}
-
-.masthead__menu .site-nav ul {
+.masthead__menu ul {
   margin: 0;
   padding: 0;
   clear: both;
@@ -76,7 +60,7 @@
   display: block;
   list-style-type: none;
   white-space: nowrap;
-  position: relative; /* 하위 목록을 위한 상위 항목으로 지정 */
+  position: relative;
 }
 
 .masthead__menu-item--lg {
@@ -91,7 +75,7 @@
 
 /* 하위 목록 스타일 */
 .masthead__menu-item ul {
-  display: none; /* 기본적으로 숨김 */
+  display: none;
   position: absolute;
   top: 100%;
   left: 0;
