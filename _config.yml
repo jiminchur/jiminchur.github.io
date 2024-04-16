@@ -285,6 +285,11 @@ collections:
     output: true
     permalink: /:path/
 
+collections:
+  cs:
+    output: true
+    permalink: /:path/
+
 # Defaults
 defaults:
   # _posts
