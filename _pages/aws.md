@@ -13,4 +13,12 @@ feature_row:
 ---
 곧 추가될 예정입니다.
 
-{% include feature_row %}
+{% assign specific_category = "AWS" %}
+
+{% for category in site.categories %}
+  {% if category[0] == specific_category %}
+        {% for post in category.last %}
+          {% include archive-single.html type=entries_layout %}
+        {% endfor %}
+  {% endif %}
+{% endfor %}
