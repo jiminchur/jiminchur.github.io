@@ -1,7 +1,7 @@
 ---
 title: "야 너도 CS공부해!!"
 permalink: /cs/
-layout: test
+layout: category
 author_profile: true
 feature_row:
   - image_path: assets/images/Mimchur2.png
