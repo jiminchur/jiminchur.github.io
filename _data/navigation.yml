@@ -11,10 +11,10 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
   - title: "Category"
-    url: /cs/
+    url: /cs
     children:
-      - title: "cs"
-        url: https://jiminchur.github.io/cs/
+      - title: "소스코드에서 명령어로"
+        url: /cs/CS2-1-1-2-1/
     # url: https://jiminchur.github.io/categories/
 
 cs:
