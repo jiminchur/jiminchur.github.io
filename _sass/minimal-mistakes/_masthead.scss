@@ -1,6 +1,6 @@
 /* ==========================================================================
-   MASTHEAD
-   ========================================================================== */
+  MASTHEAD
+  ========================================================================== */
 
 .masthead {
   position: relative;
@@ -10,33 +10,29 @@
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
   z-index: 20;
+}
 
-  &__inner-wrap {
-    @include clearfix;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1em;
-    max-width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    font-family: $sans-serif-narrow;
+.masthead__inner-wrap {
+  @include clearfix;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-family: $sans-serif-narrow;
+}
 
-    @include breakpoint($x-large) {
-      max-width: $max-width;
-    }
+.masthead__inner-wrap nav {
+  z-index: 10;
+}
 
-    nav {
-      z-index: 10;
-    }
-
-    a {
-      text-decoration: none;
-    }
-  }
+.masthead__inner-wrap a {
+  text-decoration: none;
 }
 
 .site-logo img {
@@ -50,7 +46,6 @@
   -ms-flex-item-align: center;
   align-self: center;
   font-weight: bold;
-  // z-index: 20;
 }
 
 .site-subtitle {
@@ -64,30 +59,47 @@
   margin-right: 0;
   width: 100%;
   clear: both;
+}
 
-  .site-nav {
-    margin-left: 0;
+.masthead__menu .site-nav {
+  margin-left: 0;
+}
 
-    @include breakpoint($small) {
-      float: right;
-    }
-  }
-
-  ul {
-    margin: 0;
-    padding: 0;
-    clear: both;
-    list-style-type: none;
-  }
+.masthead__menu .site-nav ul {
+  margin: 0;
+  padding: 0;
+  clear: both;
+  list-style-type: none;
 }
 
 .masthead__menu-item {
   display: block;
   list-style-type: none;
   white-space: nowrap;
+  position: relative; /* 하위 목록을 위한 상위 항목으로 지정 */
+}
 
-  &--lg {
-    padding-right: 2em;
-    font-weight: 700;
-  }
+.masthead__menu-item--lg {
+  padding-right: 2em;
+  font-weight: 700;
+}
+
+/* 호버 시 하위 목록 표시 */
+.masthead__menu-item:hover ul {
+  display: block;
+}
+
+/* 하위 목록 스타일 */
+.masthead__menu-item ul {
+  display: none; /* 기본적으로 숨김 */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.masthead__menu-item ul li {
+  display: block;
 }

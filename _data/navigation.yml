@@ -11,10 +11,15 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
   - title: "Category"
-    url: /cs
     children:
       - title: "소스코드에서 명령어로"
         url: /cs/CS2-1-1-2-1/
+      - title: "컴파일 - 명령어 관찰하기"
+        url: /cs/CS2-1-1-2-2/
+      - title: "명령어 구조"
+        url: /cs/CS2-1-1-2-3/
+      - title: "주소 지정"
+        url: /cs/CS2-1-1-2-4/
     # url: https://jiminchur.github.io/categories/
 
 cs:
