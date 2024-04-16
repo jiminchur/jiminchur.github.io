@@ -1,5 +1,5 @@
 ---
-title: "Data Engineer"
+title: "안녕하세요!! 지민철의 기술 블로그입니다."
 layout: splash
 permalink: /
 date: 2016-03-23T11:48:41-04:00
@@ -10,7 +10,7 @@ header:
   actions:
     - label: "About Me"
       url: "https://jiminchur.github.io/about/"
-excerpt: "안녕하세요 지민철의 기술 블로그입니다"
+excerpt: "제가 공부했던 부분들과 프로젝트을 기록해 놨습니다. 잘못된 부분이나 궁금한 사항있으면 Github나 E-mail을 통해 연락주세요!!"
 intro: 
   - excerpt: '제가 공부했던 부분들을 기록해 놨습니다.'
   - excerpt: '잘못된 부분이나 궁금한 사항있으면 Github나 E-mail을 통해 연락주세요'
