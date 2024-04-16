@@ -20,3 +20,23 @@ layout: default
     </section>
   </article>
 </div>
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+{% assign currentYear = 'now' | date: "%Y" %}
+{% assign postsByYear = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+
+{% assign postCount = 0 %}
+{% for year in postsByYear %}
+  {% for post in year.items %}
+    {% if postCount < 5 %}
+      <section id="{{ year.name }}" class="taxonomy__section">
+        <h2 class="archive__subtitle">{{ year.name }}</h2>
+        <div class="entries-{{ entries_layout }}">
+          {% include archive-single.html type=entries_layout %}
+        </div>
+        <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+      </section>
+      {% assign postCount = postCount | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
