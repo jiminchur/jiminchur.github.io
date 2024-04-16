@@ -68,6 +68,14 @@ feature_row:
 
 {% include feature_row %}
 
+# 최근 포스트
+
+<ul>
+  {% for post in paginator.posts limit:3 %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+
 <!-- {% include feature_row id="feature_row2" type="left" %}
 
 {% include feature_row id="feature_row3" type="right" %}
