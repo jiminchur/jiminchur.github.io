@@ -19,19 +19,19 @@ feature_row:
     url: "https://jiminchur.github.io/python/python01-02"
     btn_label: "Read More"
     btn_class: "btn--primary"
-  - image_path: /assets/images/python03.jpg
+  - image_path: /assets/images/python03.png
     title: "문자열"
     # excerpt: "CPU"
     url: "https://jiminchur.github.io/python/python01-03"
     btn_label: "Read More"
     btn_class: "btn--primary"
-  - image_path: /assets/images/python04.jpg
+  - image_path: /assets/images/python04.png
     title: "튜플"
     # excerpt: "메인 메모리와 캐시 메모리"
     url: "https://jiminchur.github.io/python/python01-04"
     btn_label: "Read More"
     btn_class: "btn--primary"
-  - image_path: /assets/images/python05.jpg
+  - image_path: /assets/images/python05.png
     title: "집합"
     # excerpt: "보조기억장치와 입출력장치"
     url: "https://jiminchur.github.io/python/python01-05"
@@ -51,25 +51,25 @@ feature_row:
     url: "https://jiminchur.github.io/python/python02-01"
     btn_label: "Read More"
     btn_class: "btn--primary"
-  - image_path: /assets/images/python08.jpg
+  - image_path: /assets/images/python08.png
     title: "반복문"
     # excerpt: "CPU"
     url: "https://jiminchur.github.io/python/python02-02"
     btn_label: "Read More"
     btn_class: "btn--primary"
-  - image_path: /assets/images/python09.jpg
+  - image_path: /assets/images/python09.png
     title: "예외처리"
     # excerpt: "메인 메모리와 캐시 메모리"
     url: "https://jiminchur.github.io/python/python02-03"
     btn_label: "Read More"
     btn_class: "btn--primary"
-  - image_path: /assets/images/python10.jpg
+  - image_path: /assets/images/python10.png
     title: "함수"
     # excerpt: "보조기억장치와 입출력장치"
     url: "https://jiminchur.github.io/python/python03"
     btn_label: "Read More"
     btn_class: "btn--primary"
-  - image_path: /assets/images/python11.jpg
+  - image_path: /assets/images/python11.png
     title: "클래스"
     # excerpt: "보조기억장치와 입출력장치"
     url: "https://jiminchur.github.io/python/python04"
