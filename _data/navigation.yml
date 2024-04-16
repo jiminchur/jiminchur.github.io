@@ -17,33 +17,33 @@ cs:
   - title: "컴퓨터 구조"
     children:
       - title: "소스코드에서 명령어로"
-        url: /cs/CS-1-1-2-1/
+        url: /cs/CS2-1-1-2-1/
       - title: "컴파일 - 명령어 관찰하기"
-        url: /cs/CS-1-1-2-2/
+        url: /cs/CS2-1-1-2-2/
       - title: "명령어 구조"
-        url: /cs/CS-1-1-2-3/
+        url: /cs/CS2-1-1-2-3/
       - title: "주소 지정"
-        url: /cs/CS-1-1-2-4/
+        url: /cs/CS2-1-1-2-4/
   - title: "데이터"
     children:
       - title: "이진수와 2의 보수"
-        url: /cs/CS-1-1-3-1/
+        url: /cs/CS2-1-1-3-1/
       - title: "부동 소수점"
-        url: /cs/CS-1-1-3-2/
+        url: /cs/CS2-1-1-3-2/
       - title: "문자 인코딩과 디코딩"
-        url: /cs/CS-1-1-3-3/
+        url: /cs/CS2-1-1-3-3/
   - title: "CPU"
     children:
       - title: "CPU 구성 요소"
-        url: /cs/CS-1-1-4-1/
+        url: /cs/CS2-1-1-4-1/
       - title: "명령어 사이클과 인터럽트"
-        url: /cs/CS-1-1-4-3/
+        url: /cs/CS2-1-1-4-3/
       - title: "멀티 코어와 멀티 프로세서"
-        url: /cs/CS-1-1-4-4/
+        url: /cs/CS2-1-1-4-4/
       - title: "명령어 병렬 처리 - 파이프라이닝"
-        url: /cs/CS-1-1-4-5/
+        url: /cs/CS2-1-1-4-5/
       - title: "비순차적명령어처리"
-        url: /cs/CS-1-1-4-6/
+        url: /cs/CS2-1-1-4-6/
   # - title: "메인 메모리와 캐시 메모리"
   #   children:
   #     - title: "RAM & ROM"
