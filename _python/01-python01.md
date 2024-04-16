@@ -1,0 +1,1971 @@
+---
+title:  "자료구조"
+permalink: /python/python01/
+excerpt: ""
+toc: true   
+---
+### 변수
+다음 예와 같은 a ,b ,c를 변수라고 한다.
+- 변수 이름 = 변수에 저장할 값
+
+
+```python
+a = 1 # 숫자
+b = "민철" # 문자
+c = [1,2,3] # 리스트
+```
+
+### 변수 표기법
+
+#### 카멜 표기법
+낙타의 모양을 연상해서 중간에 툭 튀어나온 단봉 낙타를 생각하면 편하다.
+
+
+```python
+WhatEta = "Feel Good"
+WhatEta
+```
+
+
+
+
+    'Feel Good'
+
+
+
+#### 스네이크 표기법
+뱀처럼 쭉 일정하게 일자로 작성되는 표기법이고 언더바까지 추가가 된다.
+
+
+```python
+what_eta = "feel Good"
+what_eta
+```
+
+
+
+
+    'feel Good'
+
+
+
+### 변수 이름 규칙
+- 대소문자를 구분해야한다.(변수이름을 모두 대문자로 할 경우에는 상수가 된다.)
+> Happy , HaPPy , HAppy , .... 다 다른 변수로 인식한다.
+- 알파벳, 숫자, 언더바(_)
+
+
+```python
+Happy = 1
+Happy
+```
+
+
+
+
+    1
+
+
+
+
+```python
+H___y = "app"
+H___y
+```
+
+
+
+
+    'app'
+
+
+
+
+```python
+four_4 = 4
+four_4
+```
+
+
+
+
+    4
+
+
+
+- 변수명 첫 글자에 숫자는 문법오류
+
+
+```python
+123you = 1
+```
+
+
+      Cell In[7], line 1
+        123you = 1
+          ^
+    SyntaxError: invalid decimal literal
+
+
+
+- python 키워드 및 정의된 함수 및 클래스 명으로 사용불가
+
+
+```python
+for = 1
+```
+
+
+      Cell In[9], line 1
+        for = 1
+            ^
+    SyntaxError: invalid syntax
+
+
+
+### 변수를 사용하는 이유
+코드의 재활용성과 가독성을 높여주고, 중복을 제거하여 유지보수를 용이하게 한다.
+> 코드를 깔끔하게 만들어 주어서 가독성을 높여주고, 다른사람이 코드를 보았을 때의 훨씬 나은 이해를 도울 수 있다.
+
+
+```python
+print(9*1)
+print(9*2)
+print(9*3)
+print(9*4)
+print(9*5)
+print(9*6)
+print(9*7)
+print(9*8)
+print(9*9)
+```
+
+    9
+    18
+    27
+    36
+    45
+    54
+    63
+    72
+    81
+
+
+
+```python
+n = 3
+print(n*1)
+print(n*2)
+print(n*3)
+print(n*4)
+print(n*5)
+print(n*6)
+print(n*7)
+print(n*8)
+print(n*9)
+```
+
+    3
+    6
+    9
+    12
+    15
+    18
+    21
+    24
+    27
+
+
+### 메모리 주소
+변수의 값에 대한 컴퓨터의 메모리에 저장된 위치 주소이다.
+
+
+```python
+a = 1
+id(a)
+```
+
+
+
+
+    140721097859880
+
+
+
+
+```python
+a = 1
+b = a
+id(b) # a와 b가 같다고 하여서 같은 아이디 주소가 나왔지만 만약 b = 1이라고 하고 같은 값을
+        # 주고 메모리 주소를 비교한다면 다른 주소가 나온다.
+```
+
+
+
+
+    140721097859880
+
+
+
+
+```python
+a = 1102
+c = 1102
+(id(a) ,id(c))
+
+```
+
+
+
+
+    (1634286995664, 1634286995888)
+
+
+
+## 상수
+- 변하지 않은 수
+
+
+```python
+# 변수명을 대문자로 표현 (하지만 변수와 기능적으로 차이는 없음)
+HAPPY = 1
+HAPPY
+```
+
+
+
+
+    1
+
+
+
+## 자료형
+어떤 프로그래밍 언어든 "그 언어의 자료형을 알고 이해할 수 있다면 이미 그 언어의 절반을 터득한 것이나 다름 없다"라는 말이 있다.
+
+자료형이란 프로그래밍 할 때 쓰는 숫자, 문자열 등 자료 형태로 사용하는 모든 것을 뜻한다. 프로그램의 기본이자 핵심 단위사 바로 자료형이다.
+
+![Alt text](image.png)
+
+### 숫자형
+
+#### 정수형
+정수형(lnteger)이란 말 그대로 정수를 뜻하는 자료형을 말한다.
+
+
+```python
+a_int = 100
+b_int = -100
+c_int = 0
+```
+
+
+```python
+# type()은 파이썬 변수의 타입을 확인해주는 함수이다.
+type(a_int)
+```
+
+
+
+
+    int
+
+
+
+#### 실수형
+파이썬에서 실수형(Floating-point)은 소수점이 포함된 숫자를 말한다.
+
+
+```python
+t_flo = 5.12
+Y_flo = 12.0
+```
+
+
+```python
+type(t_flo)
+```
+
+
+
+
+    float
+
+
+
+##### 컴퓨터식 지수 표현방식
+
+
+```python
+a_flo = 12.789e10
+a_flo
+```
+
+
+
+
+    127890000000.0
+
+
+
+
+```python
+b_flo = 78.456e-4
+b_flo
+```
+
+
+
+
+    0.0078456
+
+
+
+
+```python
+(type(a_flo), type(b_flo))
+```
+
+
+
+
+    (float, float)
+
+
+
+#### 숫자형 연산
+
+##### 사칙연산
+- "+" : 더하기
+- "-" : 빼기
+- "*" : 곱하기
+- "/" : 나누기
+- "**" : 제곱
+- "%" : 나머지만 
+- "//" : 몫만
+
+
+```python
+# "+" : 더하기
+a_int = 4
+b_int = 5
+a_int + b_int 
+```
+
+
+
+
+    9
+
+
+
+
+```python
+# "-" : 빼기
+a_int - b_int
+```
+
+
+
+
+    -1
+
+
+
+
+```python
+# "*" : 곱하기
+a_int * b_int
+```
+
+
+
+
+    20
+
+
+
+
+```python
+# "/" : 나누기
+a_int / b_int
+```
+
+
+
+
+    0.8
+
+
+
+
+```python
+# "**" : 제곱
+a_int ** b_int
+```
+
+
+
+
+    1024
+
+
+
+
+```python
+# "%" : 나머지만
+a_int % b_int
+```
+
+
+
+
+    4
+
+
+
+
+```python
+# "//" : 몫만
+a_int // b_int
+```
+
+
+
+
+    0
+
+
+
+### 문자열
+
+#### 문자열 생성
+
+##### 작은따옴표 ''
+
+
+```python
+a_str = 'happy balloon'
+a_str
+```
+
+
+
+
+    'happy balloon'
+
+
+
+
+```python
+# 만약 글 안에 작은따옴표를 쓰고 싶으면 전체를 큰따옴표로 묶어주거나 
+# 백슬래시를 옆에 같이 써주면 된다.
+ar_str = "i'm big"
+ae_str = 'i\'m strong'
+(ar_str, ae_str)
+```
+
+
+
+
+    ("i'm big", "i'm strong")
+
+
+
+##### 큰따옴표 ""
+
+
+```python
+a_str = "big balloon"
+a_str
+```
+
+
+
+
+    'big balloon'
+
+
+
+
+```python
+br_str = 'you say "shoot!"'
+be_str = "we learn about\""
+(br_str, be_str)
+```
+
+
+
+
+    ('you say "shoot!"', 'we learn about"')
+
+
+
+#### 이스케이프 코드
+이스케이프 코드란 프로그래밍할 때 사용할 수 있도록 미리 정의해 둔 "문자조합"이다. 주로 출력물을 보기 좋게 정렬 하는 용도로 사용한다.
+
+아래는 주로 많이 사용하는 이스케이프 코드들이다.
+
+- \n : 문자열 안에서 줄을 바꿀때 사용 
+- \t : 문자열 사이에 탭 간경을 줄 때 사용
+- \\\ : 문자 \\를 그대로 표현할 때 사용
+- \\' : 작은따옴표를 그대로 표현할 때 사용
+- \\" : 큰따옴표를 그대로 표현할 때 사용
+
+
+```python
+# \n : 문자열 안에서 줄을 바꿀때 사용 
+a_str = "i'm big \n you are short"
+print(a_str)
+```
+
+    i'm big 
+     you are short
+
+
+
+```python
+# \t : 문자열 사이에 탭 간경을 줄 때 사용
+a_str = "i'm big \t you are short"
+print(a_str)
+```
+
+    i'm big 	 you are short
+
+
+#### 문자열 연산
+
+##### 문자열 더하기
+
+
+```python
+a_str = "try some"
+b_str = " food"
+a_str + b_str
+```
+
+
+
+
+    'try some food'
+
+
+
+##### 문자열 곱하기
+
+
+```python
+c_str = "oh"
+c_str * 10
+```
+
+
+
+
+    'ohohohohohohohohohoh'
+
+
+
+#### 인덱싱
+인덱싱(indexing)이란 무엇인가를 가리킨다는 의미이다.
+파이썬은 숫자를 셀 때 0부터시작한다.
+
+만약, a = "balloon" 이라고 하면
+![Alt text](image-1.png)이다.
+
+사용방법은 "변수명[인덱스]"이다
+
+
+```python
+a = "balloon"
+a[0]
+```
+
+
+
+
+    'b'
+
+
+
+
+```python
+# a[6] = a[-1] 같다 뒤에서부터는 음수로 -1부터 세어주면 된다.
+a[-1]
+```
+
+
+
+
+    'n'
+
+
+
+#### 슬라이싱
+슬라이싱은 무엇인가를 잘라낸다는 의미이다.
+
+사용방법은 "변수명[시작 인덱싱 번호:끝 인덱싱 번호:간격]"이다.
+간격은 생략이 가능하다.
+
+
+
+```python
+a_str = "smlie"
+a_str[1:2]
+```
+
+
+
+
+    'm'
+
+
+
+
+```python
+# 처음부터 시작하고 싶으면 빈칸으로 해도 괜찮다
+a_str[:4]
+```
+
+
+
+
+    'smli'
+
+
+
+
+```python
+# 끝까지 하고 싶어도 빈칸으로 해도 괜찮다
+a_str[1:]
+```
+
+
+
+
+    'mlie'
+
+
+
+
+```python
+a_str[::2]
+```
+
+
+
+
+    'sle'
+
+
+
+#### 문자열 포메팅
+문자열 포메팅에는 3가지 방법이있다.
+사용하는 이유는 한문장안에 여러가지 문자를 집어넣기 위함이다.
+
+
+```python
+# 문자열 안에서 숫자를 넣고 싶은 자리에 %d를 사용한다.
+print("i want to take %d models" % 3)
+```
+
+    i want to take 3 models
+
+
+
+```python
+# 문자를 넣고 싶으면 %s를 사용한다.
+print("i want to take 12 %s" % "pieces")
+```
+
+    i want to take 12 pieces
+
+
+
+```python
+how_many = 12
+what = "eggs"
+
+print("i want to take %d %s" % (how_many, what))
+```
+
+    i want to take 12 eggs
+
+
+
+```python
+# 소수점 표현도 가능하다 '%0.숫자f'로 쓰고 '숫자'째자리까지 표현이 된다.
+print("record : %0.5f seconds" % 5.421812165)
+```
+
+    record : 5.42181 seconds
+
+
+##### format
+
+
+```python
+print("what time when you leave\ni must go {} o'clock".format(7))
+```
+
+    what time when you leave
+    i must go 7 o'clock
+
+
+
+```python
+eat = "banana"
+many = 12
+print("How many eat {0}?\n i ate {0} maybe {1}".format(eat,many))
+```
+
+    How many eat banana?
+     i ate banana maybe 12
+
+
+##### f 문자열 포메팅
+
+
+```python
+print(f"it's time {many}am, let's eat {eat}")
+```
+
+    it's time 12am, let's eat banana
+
+
+#### 문자열 관련 함수들
+
+##### count()
+괄호안에 문자의 갯수를 세어준다.
+
+
+```python
+a_str = "Happysomi"
+a_str.count("p")
+```
+
+
+
+
+    2
+
+
+
+##### len()
+문자열의 길이를 구해준다.
+
+
+```python
+len(a_str)
+```
+
+
+
+
+    9
+
+
+
+##### find()
+찾고 싶은 문자의 인덱스 번호로 알려준다. 만약 없다면 '-1'로 반환한다.
+
+
+```python
+a_str.find("i")
+```
+
+
+
+
+    8
+
+
+
+##### join()
+괄호안에있는 문자를 기준으로 인덱스 사이마다 삽입해준다.
+
+
+```python
+"@".join(a_str)
+```
+
+
+
+
+    'H@a@p@p@y@s@o@m@i'
+
+
+
+##### split()
+괄호 안에 있는 문자를 기준으로 나눠준다.
+
+
+```python
+a_str.split("p")
+```
+
+
+
+
+    ['Ha', '', 'ysomi']
+
+
+
+##### upper
+모든문자를 대문자로 바꿔준다.
+
+
+```python
+a_str.upper()
+```
+
+
+
+
+    'HAPPYSOMI'
+
+
+
+##### lower()
+모든문자를 소문자로 바꿔준다.
+
+
+```python
+a_str.lower()
+```
+
+
+
+
+    'happysomi'
+
+
+
+##### strip()
+- strip() : 양쪽 공백을 지워준다.
+- lstrip() : 왼쪽 공백을 지워준다.
+- rstrip() : 오른쪽 공백을 지워준다.
+
+
+```python
+b_str = "  poo "
+(b_str.strip(), b_str.lstrip(), b_str.rstrip())
+```
+
+
+
+
+    ('poo', 'poo ', '  poo')
+
+
+
+##### replace()
+문자안에 문자를 원하는 문자로 변경해준다.
+
+
+```python
+a_str.replace("Happy","pretty")
+```
+
+
+
+
+    'prettysomi'
+
+
+
+### 리스트
+
+#### 리스트 생성
+- 리스트명 = [요소1, 요소2, 요소3 , ...]
+
+
+```python
+#  1,2,3,4,5,6 숫자 모음을 다음과 같이 간단하게 표현할 수 있다.
+a_lst = [1,2,3,4,5,6]
+a_lst
+```
+
+
+
+
+    [1, 2, 3, 4, 5, 6]
+
+
+
+
+```python
+# 리스트는 문자랑 숫자 섞어서 생성할수도 있고 리스트안에 리스트를 생성한는 것도 가능하다.
+a_lst = []
+b_lst = [1,-1,2]
+c_lst = ['a','b','c']
+d_lst = [1,2,'a','b']
+e_lst = [1,2,'a','b',['a','b','c']]
+(type(a_lst) ,type(b_lst) ,type(c_lst) ,type(d_lst) , type(e_lst))
+```
+
+
+
+
+    (list, list, list, list, list)
+
+
+
+#### 인덱싱
+리스트 인덱싱도 문자열 인덱싱이랑 같은 느낌이라고 생각하면 된다.
+
+
+
+```python
+d_lst = [1,2,'a','b']
+d_lst[0]
+```
+
+
+
+
+    1
+
+
+
+
+```python
+# 리스트안에 리스트의 값을 인덱싱 하고 싶은 경우 아래와 같이 두번써주면 된다.
+e_lst = [1,2,'a','b',['a','b','c']]
+e_lst[4][2]
+```
+
+
+
+
+    'c'
+
+
+
+#### 슬라이싱
+슬라이싱도 문자열 슬라이싱과 같다.
+
+
+```python
+d_lst = [1,2,'a','b']
+d_lst[2:]
+```
+
+
+
+
+    ['a', 'b']
+
+
+
+
+```python
+d_lst[:2]
+```
+
+
+
+
+    [1, 2]
+
+
+
+
+```python
+e_lst = [1,2,'a','b',['a','b','c']]
+e_lst[4][:1]
+```
+
+
+
+
+    ['a']
+
+
+
+
+```python
+e_lst[4][1:]
+```
+
+
+
+
+    ['b', 'c']
+
+
+
+#### 리스트 연산
+
+
+```python
+# 더하기
+a_lst = [1,3,4,5]
+b_lst = [2,3,4,7,8,9]
+a_lst + b_lst
+```
+
+
+
+
+    [1, 3, 4, 5, 2, 3, 4, 7, 8, 9]
+
+
+
+
+```python
+# 반복하기
+a_lst * 3
+```
+
+
+
+
+    [1, 3, 4, 5, 1, 3, 4, 5, 1, 3, 4, 5]
+
+
+
+
+```python
+# 길이 구하기
+len(a_lst)
+```
+
+
+
+
+    4
+
+
+
+
+```python
+# 수정하기
+b_lst[0] = 123
+b_lst
+```
+
+
+
+
+    [123, 3, 4, 7, 8, 9]
+
+
+
+
+```python
+# 삭제하기
+b_lst = [2,3,4,7,8,9]
+del b_lst[0]
+b_lst
+```
+
+
+
+
+    [3, 4, 7, 8, 9]
+
+
+
+#### 리스트 함수들
+
+##### append()
+원하는 요소를 추가해준다.
+
+
+```python
+a_lst = [1,5,7,3,2]
+a_lst.append(45)
+a_lst
+```
+
+
+
+
+    [1, 5, 7, 3, 2, 45]
+
+
+
+
+```python
+a_lst.append([4,5,6])
+a_lst
+```
+
+
+
+
+    [1, 5, 7, 3, 2, 45, [4, 5, 6]]
+
+
+
+##### sort()
+리스트 안 요소들을 순서대로 정렬해준다.
+
+
+```python
+a_lst = [1,5,7,3,2]
+a_lst.sort()
+a_lst
+```
+
+
+
+
+    [1, 2, 3, 5, 7]
+
+
+
+##### reverse()
+리스트 안 요소들을 반대로 뒤집어준다.
+
+
+```python
+a_lst = [1,5,7,3,2]
+a_lst.reverse()
+a_lst
+```
+
+
+
+
+    [2, 3, 7, 5, 1]
+
+
+
+##### index()
+요소를 집어넣으면 그 요소가 어느 인덱스 위치에 있는지 알려준다.
+
+
+```python
+a_lst = [1,5,7,3,2]
+a_lst.index(5)
+```
+
+
+
+
+    1
+
+
+
+##### count()
+원하는 요소의 갯수를 리스트안에 몇개있는지 알려준다.
+
+
+```python
+a_lst = [1,1,1,1,1,5,7,3,2]
+a_lst.count(1)
+```
+
+
+
+
+    5
+
+
+
+##### extend()
+append()같은 경우에는 그대로 집어넣는데 extend()는 리스트 안에 요소들만 넣어서 확장시킨다.
+
+
+```python
+a_lst = [1,5,7,3,2]
+a_lst.extend([1,2,3])
+a_lst
+```
+
+
+
+
+    [1, 5, 7, 3, 2, 1, 2, 3]
+
+
+
+### 튜플
+- 리스트는 []로 되어있지만 튜플은 ()로 되어있다.
+- 튜플의 요소값을 생성, 삭제, 수정이 불가능 하다.
+
+#### 튜플 생성
+
+
+```python
+a_tup = ()
+b_tup = (1,2,3)
+c_tup = ('a','b','c')
+d_tup = (1,2,'b','c')
+e_tup = (1,2,'b','c',('a','b','c'))
+(type(a_tup),type(b_tup),type(c_tup),type(d_tup),type(e_tup))
+```
+
+
+
+
+    (tuple, tuple, tuple, tuple, tuple)
+
+
+
+
+```python
+a_tup.append(3)
+```
+
+
+    ---------------------------------------------------------------------------
+
+    AttributeError                            Traceback (most recent call last)
+
+    c:\python\blog\day2.ipynb Cell 136 line 1
+    ----> <a href='vscode-notebook-cell:/c%3A/python/blog/day2.ipynb#Y311sZmlsZQ%3D%3D?line=0'>1</a> a_tup.append(3)
+
+
+    AttributeError: 'tuple' object has no attribute 'append'
+
+
+
+```python
+a_tup.extend([1,2,3])
+```
+
+
+    ---------------------------------------------------------------------------
+
+    AttributeError                            Traceback (most recent call last)
+
+    c:\python\blog\day2.ipynb Cell 137 line 1
+    ----> <a href='vscode-notebook-cell:/c%3A/python/blog/day2.ipynb#Y312sZmlsZQ%3D%3D?line=0'>1</a> a_tup.extend([1,2,3])
+
+
+    AttributeError: 'tuple' object has no attribute 'extend'
+
+
+
+```python
+del b_tup[2]
+```
+
+
+    ---------------------------------------------------------------------------
+
+    TypeError                                 Traceback (most recent call last)
+
+    c:\python\blog\day2.ipynb Cell 138 line 1
+    ----> <a href='vscode-notebook-cell:/c%3A/python/blog/day2.ipynb#Y313sZmlsZQ%3D%3D?line=0'>1</a> del b_tup[2]
+
+
+    TypeError: 'tuple' object doesn't support item deletion
+
+
+
+```python
+b_tup[0] = 66
+```
+
+
+    ---------------------------------------------------------------------------
+
+    TypeError                                 Traceback (most recent call last)
+
+    c:\python\blog\day2.ipynb Cell 139 line 1
+    ----> <a href='vscode-notebook-cell:/c%3A/python/blog/day2.ipynb#Y314sZmlsZQ%3D%3D?line=0'>1</a> b_tup[0] = 66
+
+
+    TypeError: 'tuple' object does not support item assignment
+
+
+#### 인덱싱
+
+
+```python
+e_tup = (1,2,'b','c',('a','b','c'))
+e_tup[0]
+```
+
+
+
+
+    1
+
+
+
+
+```python
+e_tup[4][0]
+```
+
+
+
+
+    'a'
+
+
+
+#### 슬라이싱
+
+
+```python
+e_tup[:]
+```
+
+
+
+
+    (1, 2, 'b', 'c', ('a', 'b', 'c'))
+
+
+
+
+```python
+e_tup[:4]
+```
+
+
+
+
+    (1, 2, 'b', 'c')
+
+
+
+#### 튜플연산
+
+
+```python
+# 튜플의 연산은 튜플끼리만 가능하다.
+e_tup = (1,2,'b','c',('a','b','c'))
+e_tup + [1,2,3]
+```
+
+
+    ---------------------------------------------------------------------------
+
+    TypeError                                 Traceback (most recent call last)
+
+    c:\python\blog\day2.ipynb Cell 147 line 3
+          <a href='vscode-notebook-cell:/c%3A/python/blog/day2.ipynb#Y321sZmlsZQ%3D%3D?line=0'>1</a> # 튜플의 연산은 튜플끼리만 가능하다.
+          <a href='vscode-notebook-cell:/c%3A/python/blog/day2.ipynb#Y321sZmlsZQ%3D%3D?line=1'>2</a> e_tup = (1,2,'b','c',('a','b','c'))
+    ----> <a href='vscode-notebook-cell:/c%3A/python/blog/day2.ipynb#Y321sZmlsZQ%3D%3D?line=2'>3</a> e_tup + [1,2,3]
+
+
+    TypeError: can only concatenate tuple (not "list") to tuple
+
+
+
+```python
+e_tup + b_tup
+```
+
+
+
+
+    (1, 2, 'b', 'c', ('a', 'b', 'c'), 1, 2, 3)
+
+
+
+
+```python
+e_tup * 2
+```
+
+
+
+
+    (1, 2, 'b', 'c', ('a', 'b', 'c'), 1, 2, 'b', 'c', ('a', 'b', 'c'))
+
+
+
+### 딕셔너리
+Key와 Value를 한 쌍으로 갖는 자료형이다.
+
+{key1:value1, key2:value2, ...}
+
+#### 딕셔너리 생성
+
+
+```python
+# 딕셔너리 생성 예제
+dic = {"호선":3,"역":"상수역","방향":"정방향"}
+dic
+```
+
+
+    {'호선': 3, '역': '상수역', '방향': '정방향'}
+
+
+
+```python
+# 딕셔너리 생성 예제
+dic1 = {
+    "subway":[
+    {"호선":6,"역":"상수역","방향":"정방향"},
+    {"호선":3,"역":"대화역","방향":"역방향"},
+    {"호선":3,"역":"백석역","방향":"정방향"}
+]
+}
+dic1
+```
+
+
+    {'subway': [{'호선': 6, '역': '상수역', '방향': '정방향'},
+      {'호선': 3, '역': '대화역', '방향': '역방향'},
+      {'호선': 3, '역': '백석역', '방향': '정방향'}]}
+
+
+#### 조회
+
+
+```python
+# 조회
+dic = {"호선":3,"역":"상수역","방향":"정방향"}
+
+dic["방향"]
+```
+
+
+    '정방향'
+
+
+
+```python
+# 조회 
+dic1 = {
+    "subway":[
+    {"호선":6,"역":"상수역","방향":"정방향"},
+    {"호선":3,"역":"대화역","방향":"역방향"},
+    {"호선":3,"역":"백석역","방향":"정방향"}
+]
+}
+dic1["subway"][0]
+```
+
+
+    {'호선': 6, '역': '상수역', '방향': '정방향'}
+
+
+
+```python
+dic1["subway"][1]["역"]
+```
+
+
+    '대화역'
+
+
+#### get()
+
+
+```python
+# get()
+dic = {"호선":3,"역":"상수역","방향":"정방향"}
+dic.get("호선")
+# dic.get("호선") 이랑 dic["호선"]은 같은 값으로 나오지만
+# 만약 값이 없는 key를 조회하면 get()은 none으로 결과값이 나오지만
+# dic[]은 오류가 발생한다.('KeyError')
+```
+
+
+    3
+
+
+
+```python
+# 조건조회
+dic = {"호선":3,"역":"상수역","방향":"정방향"}
+"화장실" in dic
+```
+
+
+    False
+
+
+
+```python
+# 조건조회
+dic = {"호선":3,"역":"상수역","방향":"정방향"}
+"호선" in dic
+```
+
+
+    True
+
+
+#### 추가
+
+
+```python
+# 추가
+dic = {"호선":3,"역":"상수역","방향":"정방향"}
+dic["화장실"] = "무"
+dic
+```
+
+
+    {'호선': 3, '역': '상수역', '방향': '정방향', '화장실': '무'}
+
+
+
+```python
+# 추가
+dic = {"호선":3,"역":"상수역","방향":"정방향"}
+dic["화장실"] = {"유무" : "유", "안밖": "안"}
+dic
+```
+
+
+    {'호선': 3, '역': '상수역', '방향': '정방향', '화장실': {'유무': '유', '안밖': '안'}}
+
+
+#### 수정
+
+
+```python
+# 수정
+dic = {'호선': 3, '역': '상수역', '방향': '정방향', '화장실': {'유무': '유'}}
+dic["화장실"] = {"유무" : "유", "안밖": "안"}
+dic
+```
+
+
+    {'호선': 3, '역': '상수역', '방향': '정방향', '화장실': {'유무': '유', '안밖': '안'}}
+
+
+
+```python
+# 수정
+dic = {'호선': 3, '역': '상수역', '방향': '정방향', '화장실': {'유무': '유'}}
+dic['화장실']['유무'] = '무'
+dic
+```
+
+
+    {'호선': 3, '역': '상수역', '방향': '정방향', '화장실': {'유무': '무'}}
+
+
+#### 삭제
+
+
+```python
+# 삭제
+dic = {'호선': 3, '역': '상수역', '방향': '정방향', '화장실': {'유무': '유'}}
+del dic['화장실']
+dic
+```
+
+
+    {'호선': 3, '역': '상수역', '방향': '정방향'}
+
+
+#### 딕셔너리 함수들
+
+
+```python
+# 딕셔너리 함수들
+dic = {"층수":8 , "경비실":"있음" , "옥상":"있음"}
+dic
+```
+
+
+    {'층수': 8, '경비실': '있음', '옥상': '있음'}
+
+
+##### keys()
+
+
+```python
+# keys()
+dic = {"층수":8 , "경비실":"있음" , "옥상":"있음"}
+dic.keys()
+```
+
+
+    dict_keys(['층수', '경비실', '옥상'])
+
+
+
+```python
+# keys()
+for i in dic.keys():
+    print(i)
+```
+
+    층수
+    경비실
+    옥상
+
+
+
+```python
+# keys()
+[i for i in dic.keys()]
+```
+
+
+    ['층수', '경비실', '옥상']
+
+
+
+```python
+# keys()
+list(dic.keys())
+```
+
+
+    ['층수', '경비실', '옥상']
+
+
+##### values()
+
+
+```python
+# values
+dic = {"층수":8 , "경비실":"있음" , "옥상":"있음"}
+dic
+```
+
+
+    {'층수': 8, '경비실': '있음', '옥상': '있음'}
+
+
+
+```python
+# values
+dic.values()
+```
+
+
+    dict_values([8, '있음', '있음'])
+
+
+
+```python
+# values
+for i in dic.values() :
+    print(i)
+```
+
+    8
+    있음
+    있음
+
+
+
+```python
+# values
+[i for i in dic.values()]
+```
+
+
+    [8, '있음', '있음']
+
+
+
+```python
+# values
+list(dic.values())
+```
+
+
+    [8, '있음', '있음']
+
+
+##### key, value 쌍
+
+
+```python
+# items()
+dic = {"층수":8 , "경비실":"있음" , "옥상":"있음"}
+dic
+```
+
+
+    {'층수': 8, '경비실': '있음', '옥상': '있음'}
+
+
+
+```python
+# items()
+dic.items()
+```
+
+
+    dict_items([('층수', 8), ('경비실', '있음'), ('옥상', '있음')])
+
+
+
+```python
+# items()
+for a,b in dic.items() :
+    print(f"key:{a} / value:{b}")
+```
+
+    key:층수 / value:8
+    key:경비실 / value:있음
+    key:옥상 / value:있음
+
+
+### 집합
+
+#### 집합 생성
+- 중복을 허용하지 않는다.
+- 순서가 없다.
+
+
+```python
+a_set = set([1,2,3,4,5,6,7,7,7,8,9,9])
+a_set
+```
+
+
+
+
+    {1, 2, 3, 4, 5, 6, 7, 8, 9}
+
+
+
+#### 교집합
+
+
+```python
+a_set = set([1,2,3,4,5,6,7,7,7,8,9,9])
+b_set = set([1,5,1,5,2,4,6,7])
+a_set&b_set
+```
+
+
+
+
+    {1, 2, 4, 5, 6, 7}
+
+
+
+
+```python
+a_set.intersection(b_set)
+```
+
+
+
+
+    {1, 2, 4, 5, 6, 7}
+
+
+
+#### 합집합
+
+
+```python
+a_set = set([1,2,3,4,5,6,7,7,7,8,9,9])
+b_set = set([1,5,1,5,2,4,6,7])
+a_set|b_set
+```
+
+
+
+
+    {1, 2, 3, 4, 5, 6, 7, 8, 9}
+
+
+
+
+```python
+a_set.union(b_set)
+```
+
+
+
+
+    {1, 2, 3, 4, 5, 6, 7, 8, 9}
+
+
+
+#### 차집합
+
+
+```python
+a_set = set([1,2,3,4,5,6,7,7,7,8,9,9])
+b_set = set([1,5,1,5,2,4,6,7])
+a_set - b_set
+```
+
+
+
+
+    {3, 8, 9}
+
+
+
+
+```python
+a_set.difference(b_set)
+```
+
+
+
+
+    {3, 8, 9}
+
+
+
+#### 추가
+
+
+```python
+a_set = set([1,2,3,4,5,6,7,7,7,8,9,9])
+a_set.add(5)
+a_set.update([11,22,33])
+a_set
+```
+
+
+
+
+    {1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 22, 33}
+
+
+
+#### 제거
+
+
+```python
+a_set = set([1,2,3,4,5,6,7,7,7,8,9,9])
+a_set.remove(1)
+a_set
+```
+
+
+
+
+    {2, 3, 4, 5, 6, 7, 8, 9}
+
+
+
+### 불리언
+불리언 또는 불(bool)이라고 하며, 참(True)과 거짓(Flase)을 나타내는 자료형이다.
+
+사용법은 bool() 이다.
+
+### 자료형별 데이터의 참/거짓
+
+#### 숫자형
+
+
+```python
+a_int = 0
+b_int = 1.0
+c_int = -1234
+d_int = 0.0
+
+bool(a_int),bool(b_int),bool(c_int),bool(d_int)
+```
+
+
+
+
+    (False, True, True, False)
+
+
+
+#### 문자형
+
+
+```python
+a_str = ""
+b_str = "music"
+bool(a_str), bool(b_str)
+```
+
+
+
+
+    (False, True)
+
+
+
+#### 리스트
+
+
+```python
+a_lst = [] 
+b_lst = list() # list() -> []
+c_lst = [1, 2, 3]
+d_lst = ['a', 'b']
+
+bool(a_lst), bool(b_lst), bool(c_lst), bool(d_lst)
+```
+
+
+
+
+    (False, False, True, True)
+
+
+
+
+```python
+# 꼬일수 있는 경우?
+ab_lst = [0,""] # -> True 이지만
+ab_lst[0], ab_lst[1] # -> 은 각각 False이다.
+# 리스트에서는 값이 하나있는 경우에 ac_lst = [123] 이지만
+# 튜플에서는 뒤에 콤마을 붙여주어야 한다. ax_lst = (123,)
+```
+
+
+
+
+    (0, '')
+
+
+
+#### 튜플
+
+
+```python
+a_tup = ()
+b_tup = tuple()
+c_tup = (1,)
+d_tup = (1, 2, 3)
+
+bool(a_tup), bool(b_tup), bool(c_tup), bool(d_tup)
+```
+
+
+
+
+    (False, False, True, True)
+
+
+
+#### 딕셔너리
+
+
+```python
+a_dic = {} 
+b_dic = dict() 
+c_dic = {'a':1}
+
+bool(a_dic), bool(b_dic), bool(c_dic)
+```
+
+
+
+
+    (False, False, True)
+
+
+
+#### 집합
+
+
+```python
+a_set = set() 
+b_set = set([1, 2, 3])
+c_set = set(['a', 'b'])
+
+bool(a_set), bool(b_set), bool(c_set)
+```
+
+
+
+
+    (False, True, True)
+
+
+
