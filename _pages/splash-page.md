@@ -16,19 +16,17 @@ intro:
   - excerpt: '잘못된 부분이나 궁금한 사항있으면 Github나 E-mail을 통해 연락주세요'
 feature_row:
   - image_path: assets/images/computer.png
-    alt: "placeholder image 1"
     title: "야 너두 CS공부해!!"
     excerpt: "명령어, 데이터, CPU, 메인 메모리와 캐시메모리, 보조기억장치와 입출력장치에 대한 공부 내용입니다."
     url: "https://jiminchur.github.io/cs/CS2-1-1-2-1"
     btn_label: "Read More"
     btn_class: "btn--primary"
-#   - image_path: /assets/images/mainbadword.png
-#     alt: "placeholder image 2"
-#     title: "비속어 필터링 & 댓글 감성분석 모델"
-#     excerpt: "게시판내에 사용자의 댓글의 비속어 필터링 기능과 댓글의 감성분석을 해주는 웹 사이트"
-#     url: "https://github.com/jiminchur/Classification-Model_Profanity"
-#     btn_label: "Read More"
-#     btn_class: "btn--primary"
+  - image_path: /assets/images/pythonlogo.png
+    title: "나 파이썬 할수있을까??"
+    excerpt: "파이썬 기초에 대한 공부 내용입니다."
+    url: "https://jiminchur.github.io/python/"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
 #   - image_path: /assets/images/maincloset.jpg
 #     title: "스마트옷장"
 #     excerpt: "사용자의 옷들을 사진을 찍어 웹에 저장하고 그 옷들이 어떤종류인지 분류해주는 모델이 알아서 옷장을 관리해주고 코디 추천까지 해주는 웹 사이트"
