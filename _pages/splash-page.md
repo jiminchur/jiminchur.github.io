@@ -61,20 +61,14 @@ feature_row:
 ---
 
 <!-- {% include feature_row id="intro" type="center" %} -->
-
+<!-- 
 # 대표 포스트
 
 저의 공부 기록들 입니다!!
 
-{% include feature_row %}
+{% include feature_row %} -->
 
 # 최근 포스트
-
-<ul>
-  {% for post in paginator.posts limit:3 %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
 
 <!-- {% include feature_row id="feature_row2" type="left" %}
 
