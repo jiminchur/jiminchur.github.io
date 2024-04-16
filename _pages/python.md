@@ -76,4 +76,6 @@ feature_row:
     btn_label: "Read More"
     btn_class: "btn--primary"
 ---
+제가 파이썬 기초를 공부했을때 기록을 남겨둔 자료들입니다.
+
 {% include feature_row %}
