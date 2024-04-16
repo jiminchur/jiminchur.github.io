@@ -288,12 +288,11 @@ collections:
 collections:
   cs:
     output: true
-    permalink: /:path/
-
-collections:
+    permalink: /:collection/:path/
   python:
     output: true
-    permalink: /:path/
+    permalink: /:collection/:path/
+
 
 
 # Defaults
