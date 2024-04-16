@@ -59,9 +59,9 @@ feature_row:
 #     btn_class: "btn--primary"
 ---
 
-{% include feature_row id="intro" type="center" %}
+<!-- {% include feature_row id="intro" type="center" %} -->
 
-## 대표 포스트
+# 대표 포스트
 
 저의 공부 기록들 입니다!!
 
