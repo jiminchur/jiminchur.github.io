@@ -64,3 +64,34 @@ cs:
   #       url: /cs/CS-1-1-6-2/
   #     - title: "입출력 기법"
   #       url: /cs/CS-1-1-6-3/
+python:
+  - title: "자료구조"
+    children:
+      - title: "변수"
+        url: /python/python01-01/
+      - title: "자료형"
+        url: /python/python01-02/
+      - title: "문자열"
+        url: /python/python01-03/
+      - title: "튜플"
+        url: /python/python01-04/
+      - title: "집합"
+        url: /python/python01-05/
+      - title: "불리언"
+        url: /python/python01-06/
+  - title: "제어문"
+    children:
+      - title: "조건문"
+        url: /python/python02-01/
+      - title: "반복문"
+        url: /python/python02-02/
+      - title: "예외처리"
+        url: /python/python02-03/
+  - title: "함수"
+    children:
+      - title: "함수"
+        url: /python/python03/
+  - title: "클래스"
+    children:
+      - title: "클래스"
+        url: /python/python04/
