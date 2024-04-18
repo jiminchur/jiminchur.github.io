@@ -51,7 +51,7 @@ kramdown:
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
-  toc_levels: 1..6
+  toc_levels: 1..3
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
@@ -113,3 +113,24 @@ defaults:
 # Outputting
 permalink: /:categories/:title/
 timezone: Aisa/Seoul # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Plugin: Table of Contents (jekyll-toc)
+toc:
+  min_level: 2
+  max_level: 2
+  list_class: "toc__menu"
+  item_class: "toc__entry"
+  item_prefix: "toc__"
+
+plugins:
+  - jekyll-sitemap
+  - jemoji
+  - jekyll-seo-tag
+  - jekyll-paginate-v2
+  - jekyll-typogrify
+  - jekyll-figure
+  - jekyll-algolia
+  - jekyll/tagging
+  - jekyll-tagging-related_posts
+  - jekyll-include-cache
+  - jekyll-toc
