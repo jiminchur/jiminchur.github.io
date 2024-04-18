@@ -19,7 +19,6 @@ feature_row:
   {% if category[0] == specific_category %}
         {% for post in category.last %}
           {% include archive-single.html type=entries_layout %}
-           {% include blog-card.html %}
         {% endfor %}
   {% endif %}
 {% endfor %}
