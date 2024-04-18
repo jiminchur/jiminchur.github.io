@@ -15,4 +15,4 @@ actions:
     icon: arrow-right
     url: "https://jiminchur.github.io/about/"
 ---
-## 최근포스트
+
