@@ -15,5 +15,4 @@ actions:
     icon: arrow-right
     url: "https://jiminchur.github.io/about/"
 ---
-<h2> 최근 포스트 </h2>
-{% include recentposts.html %}
+## 최근포스트
