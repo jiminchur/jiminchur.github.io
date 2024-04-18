@@ -6,7 +6,7 @@
         <!--Blog Cards Section-->
         {% assign postCount = 0 %}
         {% for post in site.posts %}
-            {% if post.category == "Python" %}
+            {% if post.category == "python" %}
                 {% include blog-card.html %}
             {% endif %}
         {% endfor %}
