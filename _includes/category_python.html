@@ -9,9 +9,7 @@
         <div id="results-container"></div>
         <!--Blog Cards Section-->
         {% for post in site.posts %}
-            {% if post.category == "python" %}
-                {% include blog-card.html %}
-            {% endif %}
+            {% include blog-card.html %}
         {% endfor %}
         </div>
     </section>
