@@ -4,6 +4,7 @@ excerpt: "그동안에 진행했던 프로젝트입니다."
 permalink: /project/
 layout: archive
 author_profile: true
+classes: wide
 feature_row:
   - image_path: assets/images/mainhnm.jpg
     alt: "placeholder image 1"
