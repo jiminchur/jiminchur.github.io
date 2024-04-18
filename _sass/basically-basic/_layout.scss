@@ -57,7 +57,7 @@ main {
 }
 
 .inner {
-  max-width: 120%;
+  max-width: $large;
 }
 
 /*
@@ -68,7 +68,7 @@ main {
 .layout--page {
   .entry-content {
     @include breakpoint($large) {
-      width: 120%;
+      width: span(14 of 16);
     }
   }
 }
