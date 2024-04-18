@@ -16,3 +16,16 @@ layout: default
     </article>
   </div>
 </main>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // '.entry-content' 클래스를 가지는 모든 요소 선택
+    var entryContent = document.querySelectorAll('.entry-content');
+  
+    // 각 요소에 대해 너비 조정
+    entryContent.forEach(function(element) {
+      element.style.width = '90%'; // 원하는 너비로 설정
+      element.style.margin = 'auto'; // 가운데 정렬을 위한 마진 설정
+    });
+  });
+  </script>
+  
