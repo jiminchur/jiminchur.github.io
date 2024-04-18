@@ -9,6 +9,74 @@
 @import url('https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css');
 
 
+
+html,
+body {
+    scroll-behavior: smooth !important;
+    transition: all 0.25s ease;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.5vmax !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: white !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #363636 !important;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: black !important;
+}
+
+#navbar {
+    .navbar-burger {
+        span:nth-child(2) {
+            left: calc(50%);
+            width: 8px;
+        }
+    }
+}
+
+.columns {
+    .button {
+        margin: 0.5rem !important;
+    }
+}
+
+hr {
+    margin: 1rem auto;
+    height: 1px;
+}
+
+.column {
+    margin: auto 0.5rem;
+    padding: 0.5rem;
+}
+
+.searchResult {
+    a {
+        .title {
+            text-decoration: underline;
+        }
+    }
+}
+
+.bar{
+	position: fixed;
+	top: 0px; left: 0px;
+	width: 0%; height: 5px;
+	background: linear-gradient(to right, black, rgb(0, 76, 148), rgb(9, 158, 250), #009999);
+	z-index: 9999999;
+}
+
 #blog {
     .hero-body {
         padding: 3rem 0.25rem 1rem 0.25rem;
