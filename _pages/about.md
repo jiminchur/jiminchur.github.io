@@ -1,6 +1,7 @@
 ---
 permalink: /about/
 title: "About"
+classes: wide
 layouts_gallery:
   - url: /assets/images/mm-layout-splash.png
     # image_path: /assets/images/mm-layout-splash.png
@@ -13,4 +14,4 @@ layouts_gallery:
     alt: "archive layout example"
 classes: wide
 ---
-# 이력서가 추가될 예정입니다.
+# 이력서가 추가될 예정입니다.------------------------------------------------------
