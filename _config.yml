@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 remote_theme: "mmistakes/jekyll-theme-basically-basic"
 
-lang: ko
+lang: en-US
 title: DataEngineer
 email: ttlcc1364@gmail.com
 description: "Hello My Blog"
@@ -37,15 +37,10 @@ algolia:
   search_only_api_key: f035ba4d00d48d75422c0f9d7970682d # YOUR_SEARCH_ONLY_API_KEY
   powered_by: # true (default), false
 
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-
-
 # Conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
-excerpt_separator: "\n\n"
 incremental: false
 
 
