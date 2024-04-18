@@ -2,11 +2,15 @@
 <html>
 <body>
     <section class="hero is-fullheight" id="blog">
+        <div class="hero-body">
+            <div class="container">
+            </div>
+        </div>
         <div id="results-container"></div>
         <!--Blog Cards Section-->
         {% assign postCount = 0 %}
         {% for post in site.posts %}
-            {% if post.category == "python" %}
+            {% if post.category == "Python" %}
                 {% include blog-card.html %}
             {% endif %}
         {% endfor %}
