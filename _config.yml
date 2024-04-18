@@ -123,14 +123,4 @@ toc:
   item_prefix: "toc__"
 
 plugins:
-  - jekyll-sitemap
-  - jemoji
-  - jekyll-seo-tag
-  - jekyll-paginate-v2
-  - jekyll-typogrify
-  - jekyll-figure
-  - jekyll-algolia
-  - jekyll/tagging
-  - jekyll-tagging-related_posts
-  - jekyll-include-cache
   - jekyll-toc
