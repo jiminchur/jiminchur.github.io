@@ -108,7 +108,7 @@ defaults:
     values:
       layout: post
       read_time: true
-      comment: true
+      comments: true
   - scope:
       path: "_recipes"
       type: recipes
