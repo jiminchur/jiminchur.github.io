@@ -110,8 +110,8 @@ defaults:
       read_time: true
       comments: true
   - scope:
-      path: "_recipes"
-      type: recipes
+      path: "_project"
+      type: project
     values:
       layout: post
       read_time: true
