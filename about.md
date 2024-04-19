@@ -1,6 +1,7 @@
 ---
 title: "About"
 layout: about
+image: /assets/images/pythonlogo.png
 name: 지민철
 age: "1999.04.12"
 job_title: 데이터엔지니어

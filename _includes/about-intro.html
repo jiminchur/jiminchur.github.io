@@ -1,10 +1,12 @@
 <header class="intro">
+  <section class="hero is-fullheight has-text-centered" id="post">
+  <div class="hero-body">
   <div class="container">
     <div class="intro-content">
       {% if page.image %}
         {% assign intro_image = page.image.path | default: page.image | relative_url | escape %}
         <div class="intro-image" style="float: left; width: 30%; margin-right: 20px;">
-          <img src="/assets/images/cs-1-2.jpg" alt="증명사진" style="max-width: 100%; height: auto;">
+          <img src="{{ intro_image }}" alt="증명사진" style="max-width: 100%; height: auto;">
         </div>
       {% endif %}
 
@@ -31,4 +33,6 @@
       {% endif %}
     </div>
   </div>
+</div>
+</section>
 </header>
