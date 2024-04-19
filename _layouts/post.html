@@ -48,9 +48,8 @@ layout: default
         <p>{{ content }}</p>
       </div>
       <hr class="has-background-black"> <!-- 여기에 추가 -->
+      {% include disqus_comments.html %}
     </div>
   </div>
-  {% include disqus_comments.html %}
-<a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
 </section>
 </html>
