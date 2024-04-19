@@ -1,0 +1,34 @@
+<header class="intro">
+  <div class="container">
+    <div class="intro-content">
+      {% if page.image %}
+        {% assign intro_image = page.image.path | default: page.image | relative_url | escape %}
+        <div class="intro-image" style="float: left; width: 30%; margin-right: 20px;">
+          <img src="/assets/images/cs-1-2.jpg" alt="증명사진" style="max-width: 100%; height: auto;">
+        </div>
+      {% endif %}
+
+      <div class="personal-info" style="float: right; width: 70%;">
+        <h1 id="page-title" class="intro-title">{{ page.name | default: "이름" }}</h1>
+        {% if page.age %}
+          <p class="intro-age">나이: {{ page.age }}</p>
+        {% endif %}
+        {% if page.job_title %}
+          <p class="intro-job-title">직업: {{ page.job_title }}</p>
+        {% endif %}
+        {% if page.location %}
+          <p class="intro-location">위치: {{ page.location }}</p>
+        {% endif %}
+        <!-- 추가적인 개인 정보 -->
+      </div>
+
+      <div style="clear: both;"></div>
+
+      {% if page.introduction %}
+        <div class="intro-more">
+          {{ page.introduction | markdownify }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</header>

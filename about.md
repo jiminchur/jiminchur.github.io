@@ -1,6 +1,11 @@
 ---
 title: "About"
 layout: about
+name: 지민철
+age: "1999.04.12"
+job_title: 데이터엔지니어
+location: 경기도 고양시 식사동
+introduction: "안녕하세요 저는 지민철입니다."
 ---
 
 Basically Basic is a [Jekyll theme](https://jekyllrb.com/docs/themes/) meant as a substitute for the default --- [Minima](https://github.com/jekyll/minima). Conventions and features found there are fully supported by **Basically Basic**, with a few enhancements thrown in for good measure:
