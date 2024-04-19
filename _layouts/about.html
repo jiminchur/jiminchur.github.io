@@ -12,12 +12,6 @@ layout: default
       <div class="content has-text-justified-desktop has-text-justified-fullhd has-text-justified has-text-justified-tablet has-text-left-mobile">
         <p>{{ content }}</p>
       </div>
-      <aside class="entry-sidebar">
-        {% include author %}
-        {% if author_picture %}
-          <img class="author-picture" src="{{ author_picture }}" alt="{{ author_name }}">
-        {% endif %}
-      </aside>
       <hr class="has-background-black"> <!-- 여기에 추가 -->
       {% include disqus_comments.html %}
     </div>
