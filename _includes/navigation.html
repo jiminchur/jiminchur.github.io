@@ -19,22 +19,33 @@
             <span itemprop="name">{{ my_page.title | escape }}</span>
           </a>
         </li>
-        <li class="menu-item has-dropdown">
-          <a href="#" class="dropdown-trigger" itemprop="url">
-            <span itemprop="name">Category</span>
-          </a>
-          <!-- Dropdown Menu -->
-          <ul class="dropdown-menu">
-            <li><a href="/subcategory1">Subcategory 1</a></li>
-            <li><a href="/subcategory2">Subcategory 2</a></li>
-            <li><a href="/subcategory3">Subcategory 3</a></li>
-          </ul>
-        </li>
-        
       {% endif %}
     {% endfor %}
+    <li class="menu-item has-dropdown">
+      <a href="#" class="dropdown-trigger" itemprop="url">
+        <span itemprop="name">Category</span>
+      </a>
+      <!-- Dropdown Menu -->
+      <ul class="dropdown-menu">
+        <li><a href="/subcategory1">Subcategory 1</a></li>
+        <li><a href="/subcategory2">Subcategory 2</a></li>
+        <li><a href="/subcategory3">Subcategory 3</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
+<style>
+  .dropdown-menu {
+    display: none;
+    list-style-type: none;
+    padding-left: 20px;
+  }
+
+  .has-dropdown:hover .dropdown-menu {
+    display: block;
+  }
+</style>
+
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const dropdownTrigger = document.querySelector('.dropdown-trigger');
