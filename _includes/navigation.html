@@ -46,7 +46,12 @@
     display: none;
     list-style-type: none;
     padding-left: 40px;
+    margin-top: 10px; /* Category와의 간격을 늘림 */
+    position: relative;
+    left: 50%; /* 화면의 가운데 정렬을 위해 왼쪽으로 50% 이동 */
+    transform: translateX(-50%); /* 자신의 너비의 50%만큼 왼쪽으로 이동하여 가운데 정렬 */
   }
+  
 
   .has-dropdown:hover .dropdown-menu {
     display: block;
