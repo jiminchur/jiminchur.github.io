@@ -36,6 +36,11 @@ algolia:
   index_name: jiminchur # YOUR_INDEX_NAME
   search_only_api_key: f035ba4d00d48d75422c0f9d7970682d # YOUR_SEARCH_ONLY_API_KEY
   powered_by: # true (default), false
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "jiminchur"
+
 
 # Conversion
 markdown: kramdown
@@ -103,6 +108,7 @@ defaults:
     values:
       layout: post
       read_time: true
+      comment: true
   - scope:
       path: "_recipes"
       type: recipes
