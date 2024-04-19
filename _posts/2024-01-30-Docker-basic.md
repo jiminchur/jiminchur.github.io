@@ -1,5 +1,7 @@
 ---
 title:  "[Docker] 기본명령어"
+description: 기본명령어
+post-image: /assets/images/docker.jpeg
 categories: 
     - Docker
 tag:    

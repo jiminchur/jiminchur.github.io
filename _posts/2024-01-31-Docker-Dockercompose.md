@@ -1,5 +1,7 @@
 ---
 title:  "[Docker] Dockercompose이란??"
+description: Dockercompose이란??
+post-image: /assets/images/docker.jpeg
 categories: 
     - Docker
 tag:

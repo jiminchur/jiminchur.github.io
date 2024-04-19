@@ -1,5 +1,7 @@
 ---
 title:  "[Docker] Dockerfile이란??"
+description: Dockerfile이란??
+post-image: /assets/images/docker.jpeg
 categories: 
     - Docker
 tag:

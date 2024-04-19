@@ -1,5 +1,7 @@
 ---
 title:  "[Docker] Docker 설치하기"
+description: Docker 설치하기
+post-image: /assets/images/docker.jpeg
 categories: 
   - Docker
 tag:

@@ -1,5 +1,7 @@
 ---
 title:  "[Docker] 관리자 권한 부여하기"
+description: 관리자 권한 부여하기
+post-image: /assets/images/docker.jpeg
 categories: 
     - Docker
 tag:
