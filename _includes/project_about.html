@@ -1,8 +1,19 @@
-<section class="hero is-fullheight" id="blog">
-    <!--Blog Cards Section-->
-    {% for post in site.posts %}
-        {% if post.categories contains 'Project' %}
-            {% include blog-card.html %}
-        {% endif %}
-    {% endfor %}
-</section>
+<!DOCTYPE html>
+<html>
+<body>
+    <section class="hero is-fullheight" id="blog">
+        <div class="hero-body">
+            <div class="container">
+            </div>
+        </div>
+        <div id="results-container"></div>
+        <!--Blog Cards Section-->
+        {% for post in site.posts %}
+            {% if post.categories contains 'Project' %}
+                {% include blog-card.html %}
+            {% endif %}
+        {% endfor %}
+        </div>
+    </section>
+</body>
+</html>
