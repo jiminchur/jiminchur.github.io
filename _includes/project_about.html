@@ -1,5 +1,8 @@
+<div id="results-container">
+<!--Blog Cards Section-->
 {% for post in site.posts %}
     {% if post.categories contains 'Project' %}
         {% include blog-card.html %}
     {% endif %}
 {% endfor %}
+</div>
