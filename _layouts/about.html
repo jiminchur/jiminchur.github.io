@@ -9,7 +9,17 @@ layout: default
     <div class="container">
       <hr class="has-background-black">
       <div class="content has-text-justified-desktop has-text-justified-fullhd has-text-justified has-text-justified-tablet has-text-left-mobile">
-        <p>{{ content }}</p>
+        <h2>소개</h2>
+        <hr class="has-background-black">
+        <h2>교육이력</h2>
+        <hr class="has-background-black">
+        <h2>수상이력</h2>
+        <hr class="has-background-black">
+        <h2>프로젝트</h2>
+        <hr class="has-background-black">
+        {% include project_about.html %}
+        <h2>프로젝트 회고</h2>
+        <hr class="has-background-black">
       </div>
       <hr class="has-background-black"> <!-- 여기에 추가 -->
       {% include disqus_comments.html %}
