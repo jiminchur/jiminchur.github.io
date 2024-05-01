@@ -91,6 +91,7 @@ body {
   font-family: var(--font-family);
   font-size: var(--font-size-text);
   font-weight: var(--font-weight-regular);
+
 }
 
 :focus {
@@ -657,4 +658,3 @@ nav ul a:focus,
   stroke: var(--color-black);
   stroke-width: 3px;
 }
-
