@@ -64,7 +64,9 @@ body {
 img {
   display: grid;
   max-width: 40%;
+  border-radius: 50%; /* 이미지를 동그랗게 만듭니다 */
 }
+
 
 /* Inherit fonts for inputs and buttons */
 input,
