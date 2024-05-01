@@ -272,7 +272,7 @@ aside + aside {
 
 article section {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 40% 60%;
   flex-direction: column;
   align-items: flex-start;
 }
