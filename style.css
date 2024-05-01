@@ -62,7 +62,7 @@ body {
 
 /* Make images easier to work with */
 img {
-  display: block;
+  display: grid;
   max-width: 100%;
 }
 
@@ -271,7 +271,8 @@ aside + aside {
 }
 
 article section {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto;
   flex-direction: column;
   align-items: flex-start;
 }
@@ -363,12 +364,12 @@ nav ul a {
 }
 
 nav ul a:hover {
-  background-color: var(--color-black);
+  background-color: var(--color-dark-red);
   border-color: var(--color-black);
 }
 
 nav ul a:focus {
-  background-color: var(--color-black);
+  background-color: var(--color-dark-red);
 }
 
 #about section:nth-child(2) {
@@ -596,8 +597,7 @@ nav ul a,
 [class^="link"],
 .profile .container > a {
   position: relative;
-  display: grid;
-  grid-template-columns: 40% 60%;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   color: var(--color-white);
