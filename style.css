@@ -596,7 +596,8 @@ nav ul a,
 [class^="link"],
 .profile .container > a {
   position: relative;
-  display: inline-flex;
+  display: grid;
+  grid-template-columns: 40% 60%;
   align-items: center;
   justify-content: center;
   color: var(--color-white);
