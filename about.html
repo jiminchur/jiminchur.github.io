@@ -1,250 +1,549 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - Style Stage - Comic</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./style.css">
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<a href="#main" class="skip-link">Skip to main content</a>
-<header>
-  <div class="container">
-    <h1>Style Stage</h1>
-    <h2>A modern CSS showcase styled by community contributions</h2>
-    <p>
-      Maintained by <a href="https://twitter.com/5t3ph">Stephanie Eckles</a> of
-      <a href="https://moderncss.dev">ModernCSS.dev</a>
-    </p>
-    <a href="https://github.com/5t3ph/stylestage" class="link-github"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
-          <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path>
-        </svg>
-      </span>
-      Star on Github</a>
-  </div>
-</header>
-<nav id="nav" class="nav">
-  <ul class="nav__menu">
-      <li><a href="#one"class="nav__menu--foused">ONE</a></li>
-      <li><a href="#two">TWO</a></li>
-      <li><a href="#three">THREE</a></li>
-      <li><a href="#four">FOUR</a></li>
-      <div class="marker"></div>
-  </ul>
-</nav>
-<section id="one">one</section>
-<section id="two">two</section>
-<section id="three">three</section>
-<section id="four">four</section>
-
-<main id="main" >
-  <div class="container">
-    <article id="about">
-      <section class="container">
-        <h2>Setting the Stage</h2>
-        <p>
-          In 2003, <a href="http://daveshea.com/projects/zen/">Dave Shea</a> began a legendary
-          project called <a href="http://www.csszengarden.com/">CSS Zen Garden</a> that provided
-          a demonstration of "what can be accomplished through CSS-based design" until
-          submissions stopped in 2013.
-        </p>
-        <p>
-          <strong>Style Stage</strong> seeks to rekindle that spirit by providing this page as
-          the base HTML for contributors - like you! - to re-style by submitting an alternate
-          stylesheet.
-        </p>
-        <blockquote>
-          <p>
-            <strong>How it works:</strong> Visit the
-            <a href="/styles/">"All Styles"</a> directory page and select a style to view. A
-            page with identical content to this one will be presented with a new design provided
-            from a contributed stylesheet. CSS practitioners of any skill level are invited to
-            <a href="#contribute">submit a stylesheet</a>!
-          </p>
-        </blockquote>
-        <p>
-          The HTML for this page was created to be semantic, accessible, and free of nearly all
-          other opinions. Nested sectioning elements with the class `.container` serve as
-          additional style aids since you do not have access to alter the base HTML. IDs are
-          included where needed for nav anchors or accessibility, and a small number of
-          additional classes are provided for key elements without IDs. Don't forget the
-          `.skip-link`!
-        </p>
-      </section>
-      <section class="container">
-        <h2>Modern CSS Under the Spotlight</h2>
-        <p>
-          Modern CSS has increased and improved the available CSS properties and layout
-          behaviors, and browser support is nearly in sync for most high-touch features.
-        </p>
-        <p>Some examples of modern CSS include:</p>
-        <ul>
-          <li>Flexbox</li>
-          <li>Grid</li>
-          <li>custom variables</li>
-          <li>@supports()</li>
-          <li>gradients</li>
-          <li>animation</li>
-          <li>3D transforms</li>
-          <li>object-fit</li>
-          <li>:focus-within</li>
-          <li>calc()</li>
-          <li>min() / max() / clamp()</li>
-          <li>viewport units</li>
-          <li>scroll-(margin/padding/snap)</li>
-          <li>position: sticky</li>
-          <li>two-value display</li>
-          <li>expanded media query values</li>
-          <li>variable fonts</li>
-        </ul>
-        <p>
-          We also collectively have an improved understanding of what it takes to make
-          accessible experiences.
-        </p>
-        <p>
-          <a href="#contribute">Join Style Stage as a contributor</a> to refresh your CSS
-          skills, and learn from others!
-        </p>
-      </section>
-    </article>
-    <article id="guidelines">
-      <section class="container">
-        <h2>Guidelines</h2>
-        <p>
-          Contributing a stylesheet to Style Stage means you agree to abide by
-          <a href="/guidelines/">our full guidelines</a>.
-        </p>
-        <h3>TL;DR</h3>
-        <p>
-          All submissions will be autoprefixed and prepended with the
-          <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA license</a>
-          as well as attribution using the metadata you provide. You may use any build setup you
-          prefer, but the final submission should be the compiled, unminified CSS. You retain
-          the copyright to original graphics and must ensure all graphics used are appropriately
-          licensed. All asset links, including fonts, must be absolute to external resources.
-          Stylesheets will be saved into the Github repo, and detected changes that violate the
-          guidelines are cause for removal.
-        </p>
-        <p>
-          Ensure your design is responsive, and that it passes accessible contrast (we'll be
-          using aXe to verify). Animations should be removed via `prefers-reduced-motion`.
-          Cutting-edge techniques should come with a fallback if needed to not severely impact
-          the user experience. No content may be permanently hidden, and hidden items must come
-          with an accessible viewing technique. Page load time should not exceed 3 seconds.
-        </p>
-        <p>
-          Most importantly - have fun and learn something new! Check out the
-          <a href="/resources/">resources</a> for tips and inspiration.
-        </p>
-        <a href="/guidelines/" class="link-guidelines">Review full guidelines</a>
-      </section>
-    </article>
-    <article id="contribute">
-      <section class="container">
-        <h2>Contribute</h2>
-        <p>All who enjoy the craft of writing CSS are welcome to contribute!</p>
-        <p>
-          By participating as a contributor, your work will be shared with your provided
-          attribution as long as Style Stage is online, your stylesheet link and any asset links
-          remain valid, and all <a href="/guidelines/">contributor guidelines</a> are adhered
-          to.
-        </p>
-      </section>
-      <section class="container">
-        <h3>Steps to Contribute</h3>
-        <ol>
-          <li>
-            Download the source files listed below to use as a reference to build your
-            stylesheet.
-          </li>
-          <li>
-            Host your completed stylesheet at a public URL, and ensure all asset links are
-            absolute URLs to external resources.
-          </li>
-          <li>
-            <a href="https://github.com/5t3ph/stylestage">Create a pull request</a> to add your
-            information as a unique .json file to: src/_data/styles. The schema is detailed in
-            the repo README, and you can review the FAQ on
-            <a href="/guidelines/#how-do-i-create-a-pull-request-pr">creating a pull request</a>.
-          </li>
-          <li>
-            If your contribution abides by the previously listed guidelines, your submission
-            will be added!
-          </li>
-        </ol>
-      </section>
-      <footer id="files">
-        <div class="container">
-          <h3>Source Files</h3>
-          <a href="/source-files/style.css" class="link-downloadcss" download>Download CSS</a>
-          <a href="/source-files/stylestage.html" class="link-downloadhtml" download>Download HTML</a>
-          <a href="https://codepen.io/5t3ph/pen/b493845ae41e836889dd84fdbb0f5291" class="link-codepen" download>Fork the CodePen</a>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="js/script.js" defer></script>
+    <title>포트폴리오 페이지</title>
+  </head>
+  <body>
+    <!-- #site-nav -->
+    <nav id="nav" class="nav__defalut">
+      <div class="container">
+        <div class="nav__logo">
+          <a href="#header" class="logo_link">
+            <!-- <img src="./img/logo.png" alt="로고이미지" class="logo_img"> -->
+          </a>
         </div>
-      </footer>
-    </article>
-  </div>
-</main>
-<aside class="profile" aria-labelledby="profile-title">
-  <div class="container">
-    <h4 id="profile-title">Currently Staged Style</h4>
-    <ul>
-      <li class="profile-title"><span>Title:</span> <span>Main Stage</span></li>
-      <li class="profile-author"><span>Author:</span> <span>Stephanie Eckles</span></li>
-      <li class="profile-twitter">
-        <span>Twitter:</span> <span><a href="https://twitter.com/5t3ph">5t3ph</a></span>
-      </li>
-      <li class="profile-website">
-        <span>Website:</span> <span><a href="https://moderncss.dev">ModernCSS.dev</a></span>
-      </li>
-    </ul>
-    <a href="/styles/css/main-stage.css">View Stylesheet</a>
-  </div>
-</aside>
-<aside id="styles">
-  <div class="container">
-    <h2>Featured Styles</h2>
-    <ul class="features">
-      <li>
-        <span>
-          <a href="/styles/web-2.0-lobster-party">Web 2.0 Lobster Party<span aria-hidden="true"></span></a>
-          <span>by Andy Bell</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <a href="/styles/retroish">Retroish<span aria-hidden="true"></span></a>
-          <span>by Jean Louise Tiston</span>
-        </span>
-      </li>
-      <li>
-        <span>
-          <a href="/styles/transparency">Transparency<span aria-hidden="true"></span></a>
-          <span>by Jens Oliver Meiert</span>
-        </span>
-      </li>
-    </ul>
+        <input type="checkbox" class="nav__checkbox" id="mobile_nav--toggle" />
+        <label for="mobile_nav--toggle" class="nav__toggle-btn">
+          <span class="material-icons-outlined menu_icon"> menu </span>
+          <span class="material-icons-outlined close_icon"> close </span>
+        </label>
+        <ul class="nav__menu">
+          <li><a href="#header" class="current-menu">Home</a></li>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <div class="marker"></div>
+        </ul>
+      </div>
+      <!-- container -->
+    </nav>
 
-    <a href="/styles/" class="link-allstyles">View All Styles</a>
-  </div>
-</aside>
-<footer class="page-footer">
-  <div class="container">
-    <ul>
-      <li>
-        <a href="https://jiminchur.github.io/" class="link-twittercontact">Back to Github Blog</a>
-      </li>
-      <li>
-        <a href="https://github.com/jiminchur/" class="link-github">
-          Visit My GitHub</a>
-      </li>
-    </ul>
-    <p>
-      읽어주셔서 감사합니다! 더 성장하고 노력하는 지민철이 되겠습니다.
-    </p>
-  </div>
-</footer>
-<!-- partial -->
-  <script  src="./script.js"></script>
+    <!-- wrap-1200 -->
+    <div class="wrap-1200">
+      <!-- #header -->
+      <header id="header" class="section-flag">
+        <div class="container">
+          <figure class="title_photo scale-in-center">
+            <img
+              class="slide-up-down"
+              src="./img/title_img.png"
+              alt="타이틀_이미지"
+            />
+          </figure>
+          <div class="header__column_left slide-right">
+            <hgroup class="home-title">
+              <h2 class="main-title title__first">Design</h2>
+              <h2 class="main-title title__second">Growth.</h2>
+              <h1 class="sub-title">항상 배움의 자세로 성장하는 웹 개발자</h1>
+            </hgroup>
+            <button
+              class="btn_go-to-work btn_hover"
+              onclick="location.href='index.html#work'"
+            >
+              <span> SEE MY WORK</span>
+            </button>
+          </div>
+        </div>
+        <!-- container -->
+      </header>
+    </div>
+    <!-- main -->
+    <main id="main">
+      <div class="wrap-1200">
+        <!-- profile -->
+        <section class="category-section section-flag" id="profile">
+          <h2 class="category-title">Profile</h2>
+          <div class="box-component box_profile">
+            <div class="box_profile__row">
+              <figure class="profile__photo">
+                <img src="img/profile_img.jpg" alt="프로필_이미지" />
+              </figure>
+              <div class="profile__headline">
+                <span class="greeting">
+                  안녕하세요.<br />
+                  신입 웹 개발자<br />
+                  이소연입니다.
+                </span>
+              </div>
+            </div>
+            <div class="box_profile__row">
+              <div class="profile__introduction">
+                <span> '느린 것을 두려워 말고, 멈추는 것을 두려워하라' </span
+                >라는 말이 있습니다.<br />
+                어떤 분야든 배움에는 끝이 없습니다. <br />
+                겸손의 자세로 배움을 게을리하지 않고,<br />
+                빠르게 변화하는 트렌드에 맞춰 발전하는<br />
+                프론트엔드 개발자가 되겠습니다.
+              </div>
+              <div class="profile__info">
+                <p>
+                  <span>나이</span>
+                  97. 06. 22
+                </p>
+                <p>
+                  <span>E-mail</span>
+                  hothemp35&#64;gmail.com
+                </p>
+              </div>
+              <div class="profile__skill">
+                <h3>Skills</h3>
+                <ul class="profile__skill-icon">
+                  <li>
+                    <img src="./img/skill_icon_01.png" alt="HTML_아이콘" />
+                  </li>
+                  <li>
+                    <img src="./img/skill_icon_02.png" alt="CSS_아이콘" />
+                  </li>
+                  <li>
+                    <img
+                      src="./img/skill_icon_03.png"
+                      alt="자바스크립트_아이콘"
+                    />
+                  </li>
+                  <li>
+                    <img src="./img/skill_icon_04.png" alt="제이쿼리_아이콘" />
+                  </li>
+                  <li>
+                    <img src="./img/skill_icon_09.png" alt="scss_아이콘" />
+                  </li>
+                  <li>
+                    <img src="./img/skill_icon_10.png" alt="react_아이콘" />
+                  </li>
+                  <li>
+                    <img src="./img/skill_icon_11.png" alt="타입스크립트_아이콘" />
+                  </li>
+                </ul>
+                <h3>Graphics</h3>
+                <ul class="profile__skill-icon">
+                  <li>
+                    <img src="./img/skill_icon_05.png" alt="포토샵_아이콘" />
+                  </li>
+                  <li>
+                    <img src="./img/skill_icon_06.png" alt="일러스트레이터_아이콘" />
+                  </li>
+                  <li>
+                    <img src="./img/skill_icon_07.png" alt="마야_아이콘" />
+                  </li>
+                  <li>
+                    <img src="./img/skill_icon_08.png" alt="블렌더_아이콘" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
 
-</body>
+        <!-- work -->
+        <section class="category-section section-flag" id="work">
+          <h2 class="category-title">Work</h2>
+          <div class="box-component box_work">
+            <figure class="box_work__row">
+              <a
+                class="work__thumbnail"
+                href="https://github.com/soonmac/nexflix-clone"
+              >
+                <div class="work__img_caption">
+                  <span class="caption">
+                    GitHub 페이지로 가기
+                    <span class="material-icons"> open_in_new </span>
+                  </span>
+                </div>
+                <img
+                  class="work__thumbnail_img"
+                  src="./img/work_thumb_02.png"
+                  alt="넷플릭스 클론"
+                />
+              </a>
+            </figure>
+            <div class="box_work__row">
+              <div class="work__info">
+                <div class="work__introduction">
+                  <h3>넷플릭스 클론</h3>
+                  <ul>
+                    <li>사용 언어 : React, TypeScript</li>
+                    <li>
+                      주요 기능: react-query를 이용한 데이터 fetch, 검색기능
+                      구현, framer-motion을 이용한 슬라이드, 모달창 등
+                    </li>
+                    <li>참여도 : 100&#37;</li>
+                  </ul>
+                </div>
+                <button
+                  class="btn_hover work__btn-view"
+                  onclick="window.open('https://soonmac.github.io/nexflix-clone/')"
+                >
+                  VIEW
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- 2. box_work -->
+          <div class="box-component box_work">
+            <figure class="box_work__row">
+              <a
+                class="work__thumbnail"
+                href="https://github.com/soonmac/vaccine_campaign"
+              >
+                <div class="work__img_caption">
+                  <span class="caption">
+                    GitHub 페이지로 가기
+                    <span class="material-icons"> open_in_new </span>
+                  </span>
+                </div>
+                <img
+                  class="work__thumbnail_img"
+                  src="./img/work_thumb_03.png"
+                  alt="나만의 백신 인증서 홈페이지 제작"
+                />
+              </a>
+            </figure>
+            <div class="box_work__row">
+              <div class="work__info">
+                <div class="work__introduction">
+                  <h3>나만의 백신 인증서 홈페이지 제작</h3>
+                  <ul>
+                    <li>사용 언어 : HTML, SCSS, jS</li>
+                    <li>주요 기능: OPEN API를 이용한 데이터 출력</li>
+                    <li>참여도 : 100&#37;</li>
+                  </ul>
+                </div>
+                <button
+                  class="btn_hover work__btn-view"
+                  onclick="window.open('https://soonmac.github.io/vaccine_campaign/')"
+                >
+                  VIEW
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- 3. box_work -->
+          <div class="box-component box_work">
+            <figure class="box_work__row">
+              <a
+                class="work__thumbnail"
+                href="https://github.com/soonmac/react-todolist"
+              >
+                <div class="work__img_caption">
+                  <span class="caption">
+                    GitHub 페이지로 가기
+                    <span class="material-icons"> open_in_new </span>
+                  </span>
+                </div>
+                <img
+                  class="work__thumbnail_img"
+                  src="./img/work_thumb_05.png"
+                  alt="투두리스트"
+                />
+              </a>
+            </figure>
+            <div class="box_work__row">
+              <div class="work__info">
+                <div class="work__introduction">
+                  <h3>일정 관리 앱</h3>
+                  <ul>
+                    <li>사용 언어 :React, SCSS</li>
+                    <li>주요 기능: 간단한 CRUD 기능</li>
+                    <li>참여도 : 100&#37;</li>
+                  </ul>
+                </div>
+                <button
+                  class="btn_hover work__btn-view"
+                  onclick="window.open('https://soonmac.github.io/react-todolist')"
+                >
+                  VIEW
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- 5. box_work -->
+          <div class="box-component box_work">
+            <figure class="box_work__row">
+              <a
+                class="work__thumbnail"
+                href="https://github.com/soonmac/NG_page_renewal"
+              >
+                <div class="work__img_caption">
+                  <span class="caption">
+                    gitHub 페이지로 가기
+                    <span class="material-icons"> open_in_new </span>
+                  </span>
+                </div>
+                <img
+                  class="work__thumbnail_img"
+                  src="./img/work_thumb_01.png"
+                  alt="내셔널지오그래픽_홈페이지_썸네일"
+                />
+              </a>
+            </figure>
+            <div class="box_work__row">
+              <div class="work__info">
+                <div class="work__introduction">
+                  <h3>내셔널지오그래픽 홈페이지 리뉴얼</h3>
+                  <ul>
+                    <li>사용 언어 : HTML, CSS, JS</li>
+                    <li>
+                      주요 기능 : 스크롤 이벤트, 파티클 애니메이션, 이미지
+                      슬라이드
+                    </li>
+                    <li>참여도 : 100&#37;</li>
+                  </ul>
+                </div>
+                <button
+                  class="btn_hover work__btn-view"
+                  onclick="window.open('https://soonmac.github.io/NG_page_renewal/')"
+                >
+                  VIEW
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- 1. box_work -->
+
+          <div class="box-component box_work">
+            <figure class="box_work__row">
+              <a
+                class="work__thumbnail"
+                href="https://github.com/soonmac/momentum_clone"
+              >
+                <div class="work__img_caption">
+                  <span class="caption">
+                    GitHub 페이지로 가기
+                    <span class="material-icons"> open_in_new </span>
+                  </span>
+                </div>
+                <img
+                  class="work__thumbnail_img"
+                  src="./img/work_thumb_04.png"
+                  alt="Momentum 클론 코딩"
+                />
+              </a>
+            </figure>
+            <div class="box_work__row">
+              <div class="work__info">
+                <div class="work__introduction">
+                  <h3>Momentum 클론 코딩</h3>
+                  <ul>
+                    <li>사용 언어 : HTML, CSS, JS</li>
+                    <li>
+                      주요 기능: 투두리스트, 실시간 날씨, 시계, 반응형 웹페이지
+                    </li>
+                    <li>참여도 : 100&#37;</li>
+                  </ul>
+                </div>
+                <button
+                  class="btn_hover work__btn-view"
+                  onclick="window.open('https://soonmac.github.io/momentum_clone/')"
+                >
+                  VIEW
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- 4. box_work -->
+
+        </section>
+        <!-- gallery -->
+        <section class="category-section section-flag" id="gallery">
+          <h2 class="category-title">Gallery</h2>
+          <div class="box_gallery">
+            <ul class="box_gallery_row">
+              <li class="gallery__thumbnail">
+                <div class="gallery__thumbnail_content">
+                  <h3>3D Desk</h3>
+                  <ul>
+                    <li>3D Art</li>
+                    <li>Maya, Blender</li>
+                  </ul>
+                </div>
+                <!-- gallery__thumbnail_content -->
+                <a target="_blank" href="./img/gallery_01.png">
+                  <img src="./img/gallery_thumb_01.png" alt="갤러리_썸네일1" />
+                </a>
+              </li>
+              <li class="gallery__thumbnail">
+                <div class="gallery__thumbnail_content">
+                  <h3>Name Logo</h3>
+                  <ul>
+                    <li>Logo Design</li>
+                    <li>Illustrator, Photoshop</li>
+                  </ul>
+                </div>
+                <!-- gallery__thumbnail_content -->
+                <a target="_blank" href="./img/gallery_02.png">
+                  <img src="./img/gallery_thumb_02.png" alt="갤러리_썸네일2" />
+                </a>
+              </li>
+              <li class="gallery__thumbnail">
+                <div class="gallery__thumbnail_content">
+                  <h3>Donut</h3>
+                  <ul>
+                    <li>2D Illust</li>
+                    <li>Clip studio</li>
+                  </ul>
+                </div>
+                <!-- gallery__thumbnail_content -->
+                <a target="_blank" href="./img/gallery_03.png">
+                  <img src="./img/gallery_thumb_03.png" alt="갤러리_썸네일3" />
+                </a>
+              </li>
+              <li class="gallery__thumbnail">
+                <div class="gallery__thumbnail_content">
+                  <h3>Bear</h3>
+                  <ul>
+                    <li>3D Animation</li>
+                    <li>Maya, After Effect</li>
+                  </ul>
+                </div>
+                <!-- gallery__thumbnail_content -->
+                <a target="_blank" href="./img/gallery_04.jpg">
+                  <img src="./img/gallery_thumb_04.png" alt="갤러리_썸네일4" />
+                </a>
+              </li>
+              <li class="gallery__thumbnail">
+                <div class="gallery__thumbnail_content">
+                  <h3>Bear &amp; Girl</h3>
+                  <ul>
+                    <li>3D Animation</li>
+                    <li>Maya, After Effect</li>
+                  </ul>
+                </div>
+                <!-- gallery__thumbnail_content -->
+                <a target="_blank" href="./img/gallery_05.jpg">
+                  <img src="./img/gallery_thumb_05.png" alt="갤러리_썸네일5" />
+                </a>
+              </li>
+              <li class="gallery__thumbnail">
+                <div class="gallery__thumbnail_content">
+                  <h3>Vaccine Card</h3>
+                  <ul>
+                    <li>Design</li>
+                    <li>Clip studio, Photoshop</li>
+                  </ul>
+                </div>
+                <!-- gallery__thumbnail_content -->
+                <a target="_blank" href="./img/gallery_06.png">
+                  <img src="./img/gallery_thumb_06.png" alt="갤러리_썸네일6" />
+                </a>
+              </li>
+            </ul>
+            <!-- box_gallery_row -->
+          </div>
+          <!-- box_gallery -->
+        </section>
+      </div>
+      <!-- wrap 1200 -->
+
+      <!-- contact -->
+      <div class="wrap__contact">
+        <!-- contact -->
+        <section class="category-section section-flag" id="contact">
+          <div class="box-component box_contact">
+            <figure class="choco-img">
+              <img src="./img/choco_banana.png" alt="음료수_이미지" />
+            </figure>
+            <h2 class="category-title">Contact Me</h2>
+            <address class="contact__address">
+              <img
+                class="icon__mail"
+                src="./img/icon_mail.png"
+                alt="이메일_아이콘"
+              />
+              <span class="email">hothemp35&#64;gmail.com</span>
+              <ul class="sns__container">
+                <li class="sns__column">
+                  <span class="address__subtitle">GitHub</span>
+                  <a target="_blank" href="https://github.com/soonmac">
+                    <img src="./img/icon_github.png" alt="깃허브_아이콘" />
+                  </a>
+                </li>
+                <li class="sns__column">
+                  <span class="address__subtitle">Notion</span>
+                  <a
+                    target="_blank"
+                    href="https://paint-flower-5f0.notion.site/TIL-01687f28163d4864b7e0c6bf11268897"
+                  >
+                    <img src="./img/icon_notion.png" alt="노션블로그_아이콘" />
+                  </a>
+                </li>
+                <li class="sns__column">
+                  <span class="address__subtitle">velog</span>
+                  <a target="_blank" href="https://velog.io/@soonmac">
+                    <img src="./img/icon_velog.png" alt="벨로그_아이콘" />
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <!-- box_contact -->
+        </section>
+      </div>
+      <!-- wrap-contact -->
+    </main>
+
+    <footer id="footer">
+      <img src="./img/logo.png" alt="로고_이미지" />
+      <p>
+        본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.<br />
+        &#169; 2021 LEE SOYEON. All Rights Reserved.
+      </p>
+    </footer>
+
+    <!-- 갤러리 오버레이 -->
+    <div id="overlay">
+      <button class="close">
+        <span class="material-icons md-48"> cancel </span>
+      </button>
+      <button id="prev_btn" class="btn">
+        <span class="material-icons md-48"> arrow_back_ios </span>
+      </button>
+      <button id="next_btn" class="btn">
+        <span class="material-icons md-48"> arrow_forward_ios </span>
+      </button>
+      <div class="container">
+        <ul id="slide">
+          <li>
+            <img class="gallery__big_photo" src="" alt="갤러리_사진_원본1" />
+          </li>
+          <li>
+            <img class="gallery__big_photo" src="" alt="갤러리_사진_원본2" />
+          </li>
+          <li>
+            <img class="gallery__big_photo" src="" alt="갤러리_사진_원본3" />
+          </li>
+          <li>
+            <img class="gallery__big_photo" src="" alt="갤러리_사진_원본4" />
+          </li>
+          <li>
+            <img class="gallery__big_photo" src="" alt="갤러리_사진_원본5" />
+          </li>
+          <li>
+            <img class="gallery__big_photo" src="" alt="갤러리_사진_원본6" />
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+  </body>
 </html>
