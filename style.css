@@ -63,7 +63,7 @@ body {
 /* Make images easier to work with */
 img {
   display: grid;
-  max-width: 100%;
+  max-width: 70%;
 }
 
 /* Inherit fonts for inputs and buttons */
