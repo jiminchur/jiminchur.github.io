@@ -364,12 +364,12 @@ nav ul a {
 }
 
 nav ul a:hover {
-  background-color: var(--color-dark-red);
+  background-color: var(--color-black);
   border-color: var(--color-black);
 }
 
 nav ul a:focus {
-  background-color: var(--color-dark-red);
+  background-color: var(--color-black);
 }
 
 #about section:nth-child(2) {
