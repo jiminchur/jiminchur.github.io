@@ -1,4 +1,3 @@
-
 ---
 title: "[완전탐색] 피로도"
 description: 피로도

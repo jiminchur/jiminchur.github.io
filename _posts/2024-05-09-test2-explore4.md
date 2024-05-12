@@ -1,4 +1,3 @@
-
 ---
 title: "[완전탐색] 카펫"
 description: 카펫
