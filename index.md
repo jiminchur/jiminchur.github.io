@@ -1,6 +1,6 @@
 ---
 layout: home
-paginate: true
+paginate: 
 alt_title: 
 sub_title: 
 image: /assets/images/main.gif
