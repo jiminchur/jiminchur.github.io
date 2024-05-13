@@ -1,6 +1,9 @@
 ---
 layout: home
-image: /assets/images/main.gif
+paginate: true
+alt_title: ""
+sub_title: ""
+image: /assets/images/main2.gif
 actions:
   - label: "Github"
     icon: github
