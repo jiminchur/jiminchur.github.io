@@ -16,7 +16,7 @@
 remote_theme: "mmistakes/jekyll-theme-basically-basic"
 
 lang: en-US
-title:
+title: DataEngineer
 email: ttlcc1364@gmail.com 
 description: "Hello My Blog"
 baseurl: "" # the optional subpath of your site, e.g. "/blog"
