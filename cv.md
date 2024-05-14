@@ -1,3 +1,4 @@
 ---
+title: Category
 layout: category
 ---
