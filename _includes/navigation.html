@@ -30,43 +30,7 @@
       <a href="javascript:void(0);" class="dropdown-trigger" itemprop="url">
         <span itemprop="name">Category</span>
       </a>
-      <!-- Dropdown Menu -->
-      <ul class="dropdown-menu">
-        <li><a href="/category/cs/">CS</a></li>
-        <li><a href="/category/python/">Python</a></li>
-        <li><a href="/category/linux/">Linux</a></li>
-        <li><a href="/category/aws/">AWS</a></li>
-        <li><a href="/category/docker/">Docker</a></li>
-      </ul>
     </li>
   </ul>
 </nav>
-<style>
-  .dropdown-menu {
-    display: none;
-    list-style-type: none;
-    padding-left: 40px;
-    margin-top: 30px; /* Category와의 간격을 늘림 */
-    position: relative;
-    left: 80%; /* 화면의 가운데 정렬을 위해 왼쪽으로 50% 이동 */
-    transform: translateX(-80%); /* 자신의 너비의 50%만큼 왼쪽으로 이동하여 가운데 정렬 */
-  }
-  
-
-  .has-dropdown:hover .dropdown-menu {
-    display: block;
-  }
-</style>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const dropdownTrigger = document.querySelector('.dropdown-trigger');
-    const dropdownMenu = document.querySelector('.dropdown-menu');
-
-    dropdownTrigger.addEventListener('click', (event) => {
-      event.preventDefault(); // 기본 이벤트 방지
-      dropdownMenu.classList.toggle('is-active'); // 클래스 토글
-    });
-  });
-</script>
 
