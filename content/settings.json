@@ -19,7 +19,7 @@
     "navigation": {
       "header": [
         { "label": "About", "url": "/#about" },
-        { "label": "Features", "url": "/#features" },
+        { "label": "Projects", "url": "/#features" },
         { "label": "Github", "url": "/#github" },
         { "label": "Blog", "url": "/blog" }
       ],
