@@ -6,7 +6,8 @@
     "clean": "gatsby clean",
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "deploy": "gatsby build && gh-pages -d public"
   },
   "engines": {
     "node": ">=18.0.0"
@@ -41,5 +42,8 @@
     "animations",
     "dark-mode",
     "gdpr-compliant"
-  ]
+  ],
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
 }
