@@ -6,7 +6,7 @@
     "titleTemplate": "%s · Minchur's Blog",
     "description": "Minchur's Blog",
     "author": "Ji Min Chur",
-    "avatar": "../content/images/gatsby.png",
+    "avatar": "../content/images/main_img3.png",
     "bio": "Minchur's Blog",
     "social": {
       "github": "https://github.com/jiminchur",
@@ -22,16 +22,16 @@
         { "label": "Projects", "url": "/#features" },
         { "label": "Github", "url": "/#github" },
         { "label": "Blog", "url": "/blog" }
-      ],
+      ]
       // "ctaButton": {
       //   "openNewTab": true,
       //   "label": "Resume",
       //   "url": "/resume.pdf"
       // },
-      "footer": [
-        { "label": "Welcome My Blog"}// , "url": "/privacy" }
-        // { "label": "Imprint", "url": "/imprint" }
-      ]
+      // "footer": [
+      //   { "label": "Welcome My Blog" , "url": "/privacy" },
+      //   { "label": "Imprint", "url": "/imprint" }
+      // ]
     },
     "featureToggles": {
       "useDarkModeAsDefault": false,
