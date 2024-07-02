@@ -1,7 +1,7 @@
 {
   "intro": "안녕하세요",
   "heroPhoto": {
-    "src": "../../images/lego-dummy.png",
+    "src": "../../images/main_img.jpeg",
     "alt": "My Photo"
   },
   "image": {
@@ -11,7 +11,7 @@
   "title": "항상 성장하려고 노력하는",
   "subtitle": {
     "prefix": "개발자 ",
-    "highlight": "지민철",
+    "highlight": " 지민철",
     "suffix": "입니다."
   },
   "description": "궁금하시거나 문의사항있으시면 아래 링크로 연락주세요.",
