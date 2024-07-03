@@ -9,7 +9,7 @@
       "image": {
         "src": "../../images/projects/closet_img.jpeg",
         "alt": "Quick Setup",
-        "linkTo": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+        "linkTo": "https://github.com/jiminchur/PlayData-28_Smart-Closet"
       },
       "links": [
         {
@@ -30,7 +30,8 @@
       "tags": ["PlayData Bootcamp", "TeamProject"],
       "image": {
         "src": "../../images/projects/badwords_img.png",
-        "alt": "Extendable Layout"
+        "alt": "Extendable Layout",
+        "linkTo": "https://github.com/jiminchur/PlayData-28_Badword-filter-Sentiment-analysis"
       },
       "links": [
         {
