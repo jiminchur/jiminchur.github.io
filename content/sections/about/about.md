@@ -1,5 +1,5 @@
 ---
-imageSrc: "../../images/main_img.png"
+imageSrc: "../../images/charles-deluvio-DgoyKNgPiFQ-unsplash.jpg"
 imageAlt: "about me img"
 ---
 
