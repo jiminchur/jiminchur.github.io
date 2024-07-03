@@ -14,6 +14,6 @@ imageAlt: "about me img"
 
 추가적으로도 패스트캠퍼스에서 온라인 강의를 결제해서 제가 부족한 부분에 대한 공부를 끊임없이 하는 중입니다.
 
-멋진 개발자가 되기위해 항상 노력중입니다. 저의 대해서 궁금하시다면 제 [**포토폴리오 링크**](https://mire-plastic-701.notion.site/715fc6797f174ed8af43272613ac2399?pvs=4)로 들어오셔서 구경하세요!
+멋진 개발자가 되기위해 항상 노력중입니다. 저의 대해서 궁금하시다면 제 👉🏻[**포토폴리오 링크**](https://mire-plastic-701.notion.site/715fc6797f174ed8af43272613ac2399?pvs=4)👈🏻로 들어오셔서 구경하세요!
 
 Photo by <a href="https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer" aria-label="External Link"></a> on Pinterest
