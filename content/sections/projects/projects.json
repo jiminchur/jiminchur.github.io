@@ -4,10 +4,10 @@
       "visible": true,
       "category": "🚪 오늘모입지?",
       "title": "스마트옷장",
-      "description": "Get up and running within minutes. Just install the starter, add your content, deploy it, and there you go! This starter works seamlessly with hosts like Netlify. Photo by Clément H on Unsplash.",
+      "description": "플레이데이터 부트캠프 마지막 프로젝트 기간은 대략 1달(2024.02.07 ~ 2024.03.22)정도 진행 하였고, 사용자들이 자신의 옷을 찍어서 업로드하면 저장과 동시에 어떤 종류의 옷인지 모델이 분류해서 카테고리로 저장해주는 스마트옷장 웹사이트이다. 팀장 겸 데이터엔지니어 파트를 맡아서 프로젝트를 진행하였다.",
       "tags": ["PlayData Bootcamp", "TeamProject"],
       "image": {
-        "src": "../../images/clement-h-95YRwf6CNw8-unsplash.jpg",
+        "src": "../../images/projects/closet_img.jpeg",
         "alt": "Quick Setup",
         "linkTo": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
       },
@@ -26,10 +26,10 @@
       "visible": true,
       "category": "🤬 팀앤드(&)",
       "title": "비속어 필터링 및 댓글 감정분석 모델",
-      "description": "The starter includes predefined sections as well as a template for new, custom sections. Moreover, you can add new projects to this section without additional coding. Photo by Kelly Sikkema on Unsplash.",
+      "description": "플레이 데이터 중간 프로젝트로 3일 정도 진행하였고, 비속어 필터링 및 감정 분석 모델을 적용한 웹사이트를 만들었다. 팀장 및 데이터엔지니어 파트를 담당하여 프로젝트를 수행하였다.",
       "tags": ["PlayData Bootcamp", "TeamProject"],
       "image": {
-        "src": "../../images/kelly-sikkema-Hl3LUdyKRic-unsplash.jpg",
+        "src": "../../images/projects/badwords_img.png",
         "alt": "Extendable Layout"
       },
       "links": [
