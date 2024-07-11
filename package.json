@@ -16,6 +16,7 @@
     "ajv": "^8.16.0",
     "ajv-keywords": "^5.1.0",
     "gatsby": "^5.0.1",
+    "gatsby-plugin-sitemap": "^6.13.1",
     "gatsby-theme-portfolio-minimal": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
