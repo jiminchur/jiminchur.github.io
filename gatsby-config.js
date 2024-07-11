@@ -1,13 +1,10 @@
 module.exports = {
-  siteMetadata:{
-    siteUrl: 'https://jiminchur.github.io/'
-  },
   plugins: [
     'gatsby-plugin-sitemap',
     {
       resolve: "gatsby-theme-portfolio-minimal",
       options: {
-        siteUrl: "https://gatsby-starter-portfolio-minimal-theme.netlify.app/", // Used for sitemap generation
+        siteUrl: "https://jiminchur.github.io/", // Used for sitemap generation
         manifestSettings: {
           favicon: "./content/images/main_img3.png", // Path is relative to the root
           siteName: "My Minimal Portfolio", // Used in manifest.json
