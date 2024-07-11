@@ -1,6 +1,5 @@
 module.exports = {
   plugins: [
-    'gatsby-plugin-sitemap',
     {
       resolve: "gatsby-theme-portfolio-minimal",
       options: {
