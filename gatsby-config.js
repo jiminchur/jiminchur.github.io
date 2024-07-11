@@ -25,5 +25,13 @@ module.exports = {
         // }
       },
     },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://jiminchur.github.io/',
+        sitemap: 'https://jiminchur.github.io/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
   ],
 };
