@@ -1,4 +1,7 @@
 module.exports = {
+  siteMetadata: {
+    siteUrl: 'https://jiminchur.github.io/',
+  },
   plugins: [
     {
       resolve: "gatsby-theme-portfolio-minimal",
