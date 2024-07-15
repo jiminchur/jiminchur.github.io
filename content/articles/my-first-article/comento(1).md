@@ -1,7 +1,7 @@
 ---
 title: "[코멘토 DB직무부트캠프] 코멘토를 선택하게된 이유"
 description: "코멘토 DB 직무부트캠프"
-date: "2024-07-05"
+date: "2024-06-25"
 banner:
   src: "../../images/articles/comento/comento_img.png"
   alt: "코멘토 DB 직무부트캠프"
