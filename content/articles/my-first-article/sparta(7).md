@@ -51,13 +51,13 @@ public class Solution {
 ## 🤠 인메모리 저장소 및 캐싱 전략 -1 
 이번주는 저번주와는 다르게 공부했던 내용을 다른 포스팅글에 적고 여기에다가는 링크만 삽입해볼려고 한다. 그런 다음에 두가지 방법을 비교해 보며 더 좋은 방법으로 앞으로 계속 작성해볼 예정이다.
 
-1. [[Redis] Redis란??](https://jiminchur.github.io/my-first-article/redis1/)
+1. [👉🏻 [Redis] Redis란??](https://jiminchur.github.io/my-first-article/redis1/)
 
-2. [[Redis] Redis Docker로 설치하기](https://jiminchur.github.io/my-first-article/redis2/)
+2. [👉🏻 [Redis] Redis Docker로 설치하기](https://jiminchur.github.io/my-first-article/redis2/)
 
-3. [[Redis] Redis 타입 및 명령어 살펴보기](https://jiminchur.github.io/my-first-article/redis3/)
+3. [👉🏻 [Redis] Redis 타입 및 명령어 살펴보기](https://jiminchur.github.io/my-first-article/redis3/)
 
-4. [[Redis] Spring에서 Redis 사용해보기](https://jiminchur.github.io/my-first-article/redis4/)
+4. [👉🏻 [Redis] Spring에서 Redis 사용해보기](https://jiminchur.github.io/my-first-article/redis4/)
 
 ## ✍🏻 오늘 하루를 마무리 하며...
 오늘도 MSA때와 마찬가지로 많이 들어본 기술스택이지만 사용해본적은 없던 것이였다. 오늘도 강의를 들을때 재밌고 좋았던 것같다. 지금은 각각의 기술들이 어떻게 작동되는지는 알고 실습을 해봤지만 실제로 내가 프로젝트에 적용할려면 어떻게 해야하고 써야되는 이유를 알아야 한다는 점은 아직 정확하게는 잘 모르는거 같다. 그렇지만 여러번 사용을 해보고 피드백을 받으면 나도 정확하게 사용법을 알고 왜 사용했는지를 설명할 수 있는 날이 올거라 생각이 든다.
