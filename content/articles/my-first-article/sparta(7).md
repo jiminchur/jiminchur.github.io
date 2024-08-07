@@ -1,5 +1,5 @@
 ---
-title: "[SpartaCodingClub] JAVA 단기 심화 부트캠프 WIL (7)"
+title: "[SpartaCodingClub] JAVA 단기 심화 부트캠프 TIL (7)"
 description: "JAVA 단기 심화 부트캠프"
 date: "2024-08-05"
 banner:
