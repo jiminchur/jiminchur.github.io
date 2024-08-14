@@ -3,7 +3,7 @@ title: "[RabbitMQ] RabbitMQ 실습 (1)"
 description: "JAVA 단기 심화 부트캠프"
 date: "2024-08-14"
 banner:
-  src: "../../images/articles/rabbitmq/RabbitMQ_img.png"
+  src: "../../images/articles/rabbitmq/RabbitMQ-img.png"
   alt: "JAVA 단기 심화 부트캠프"
   caption: 'Photo by <u><a href="https://unsplash.com/photos/Nc5Q_CEcY44">RabbitMQ</a></u>'
 categories:
