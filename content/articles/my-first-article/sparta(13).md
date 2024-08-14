@@ -20,8 +20,13 @@ keywords:
 
 ## 📘 오늘의 학습!@!@
 
-[👉🏻 [대규모 시스템] 동시 접속자와 초당 요청량](https://jiminchur.github.io/my-first-article/large-scale-system1/)
+1. [👉🏻 [RabbitMQ] RabbitMQ란??](https://jiminchur.github.io/my-first-article/rabbitmq1/)
 
-[👉🏻 [대규모 시스템] 요청 종류에 따른 개발](https://jiminchur.github.io/my-first-article/large-scale-system2/)
+2. [👉🏻 [RabbitMQ] RabbitMQ 실습 (1)](https://jiminchur.github.io/my-first-article/rabbitmq2/)
 
-[👉🏻 [대규모 시스템] 데이터 일관성 유지 방법](https://jiminchur.github.io/my-first-article/large-scale-system3/)
+3. [👉🏻 [RabbitMQ] RabbitMQ 실습 (2)](https://jiminchur.github.io/my-first-article/rabbitmq3/)
+
+4. [👉🏻 [Kafka] Kafka란??](https://jiminchur.github.io/my-first-article/kafka1/)
+
+## 🤓 오늘 학습을 마치며..
+오늘은 원래 Kafka 실습까지 할려고 했으나 RabbitMQ쪽만 집중적으로 하고 Kafka이론까지만 학습을 진행했다. 전까지는 너무 강의만 듣다가 블로그 글이나 정리하는게 부족했었는데 오늘은 이론부분을 들으면 바로 블로그 작성하고 하면서 진행했다. 블로그 정리하는데 시간이 조금 많이 소비가 되긴 했지만 나중을 위해서 투자했다고 생각이 든다. 내일은 광복절이여서 빨간날이다. 부트캠프도 일정상 쉬는 날이여서 내일 Kafka학습을 진행 하면 될거 같다.
