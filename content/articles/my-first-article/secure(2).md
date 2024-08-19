@@ -8,7 +8,7 @@ banner:
   caption: 'Photo by <u><a href="https://unsplash.com/photos/Nc5Q_CEcY44">Google</a></u>'
 categories:
   - "Secure Coding"
-  - "CORS"
+  - "CSRF"
 keywords:
   - "JAVA" 
   - "단기 심화 부트캠프"
