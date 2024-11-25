@@ -7,7 +7,7 @@
       "description": "MSA와 SpringBoot를 기반으로 하며, 쿠팡의 풀필먼트 서비스에서 영감을 받아 설계되었습니다. 상품의 입고부터 출고, 배송에 이르는 전체 물류 프로세스를 효율적으로 관리할 수 있도록 구성되었습니다. 허브스포크 방식으로 설계되어 물품이 물류 허브에서 고객 근처 허브로 이동한 후 최종적으로 고객에게 전달됩니다.",
       "tags": ["PlayData Bootcamp", "TeamProject"],
       "image": {
-        "src": "../../images/projects/closet_img.jpeg",
+        "src": "../../images/projects/coopangLogo.png",
         "alt": "Quick Setup",
         "linkTo": "https://github.com/dev-wonny/coopang"
       },
