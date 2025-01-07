@@ -3,7 +3,7 @@ title: "[Kafka] Kafka 실습하기 (1)"
 description: "JAVA 단기 심화 부트캠프"
 date: "2024-08-16"
 banner:
-  src: "../../images/articles/kafka/kafka-img.png"
+  src: "../../../images/articles/kafka/kafka-img.png"
   alt: "JAVA 단기 심화 부트캠프"
   caption: 'Photo by <u><a href="https://unsplash.com/photos/Nc5Q_CEcY44">kafka</a></u>'
 categories:

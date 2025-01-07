@@ -3,7 +3,7 @@ title: "[Kafka] Topic, Partition, Segment에 대해서 알아보자"
 description: "나혼자 Kafka 레벨업"
 date: "2024-12-03"
 banner:
-  src: "../../images/articles/kafka/kafka-img.png"
+  src: "../../../images/articles/kafka/kafka-img.png"
   alt: "나혼자 Kafka 레벨업"
   caption: 'Photo by <u><a href="https://unsplash.com/photos/Nc5Q_CEcY44">kafka</a></u>'
 categories:
