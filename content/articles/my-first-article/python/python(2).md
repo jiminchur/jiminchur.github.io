@@ -3,7 +3,7 @@ title: "[파이썬 기초] 자료형"
 description: "파이썬 기초"
 date: "2023-09-27"
 banner:
-  src: "../../images/articles/python/pythonlogo.png"
+  src: "../../../images/articles/python/pythonlogo.png"
   alt: "파이썬 기초"
   caption: 'Photo by <u><a href="https://unsplash.com/photos/Nc5Q_CEcY44">Google</a></u>'
 categories:

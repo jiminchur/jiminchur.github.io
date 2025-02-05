@@ -3,7 +3,7 @@ title: "[코멘토 DB직무부트캠프] 코멘토를 선택하게된 이유"
 description: "코멘토 DB 직무부트캠프"
 date: "2024-06-25"
 banner:
-  src: "../../images/articles/comento/comento_img.png"
+  src: "../../../images/articles/comento/comento_img.png"
   alt: "코멘토 DB 직무부트캠프"
   caption: 'Photo by <u><a href="https://unsplash.com/photos/Nc5Q_CEcY44">Comento</a></u>'
 categories:
@@ -18,17 +18,17 @@ keywords:
 [👉🏻 코멘토 사이트 링크 👈🏻](https://comento.kr/edu)
 코멘토는 커리어의 시작을 준비하는 사람들이나 이제 막 커리어를 시작한 사람들의 커리어 시작과 성장을 도와주는 플랫폼 서비스이다.
 
-![스크린샷](../../images/articles/comento/comento_1_1.png)
+![스크린샷](../../../images/articles/comento/comento_1_1.png)
 코멘토에는 현재 여러개의 직무부트 캠프가 존재한다.
 
 여러가지 직종 여러가지 직업을 인턴이 되어봐서 한달동안 진행할 수 있게 해준다.
 
-![스크린샷](../../images/articles/comento/comento_1_2.png)
+![스크린샷](../../../images/articles/comento/comento_1_2.png)
 취업에 관한 고민이나 직장인에 관한 고민들을 나눌수 있는 커뮤니티 까지 존재하는 걸 알수가있다.
 
 ## 🫵 내가 선택한 직무부트캠프는??
 나는 데이터 엔지니어를 꿈꾸는 준비생으로써 내가 코멘토를 선택하게 된 이유도 데이터 엔지니어 직무부트캠프가 있었기 때문이다.
-![스크린샷](../../images/articles/comento/comento_1_3.png)
+![스크린샷](../../../images/articles/comento/comento_1_3.png)
 
 아직 실무를 경험해보지 못한 나로써는 실제 업무를 체험해볼수있다는 것 자체가 나에겐 큰 메리트로 다가왔다.
 
