@@ -3,19 +3,19 @@ title: "[Redis] 리더보드와 Sorted Set"
 description: "Redis"
 date: "2024-08-06"
 banner:
-  src: "../../images/articles/redis/redis_img.png"
+  src: "../../../images/articles/redis/redis_img.png"
   alt: "Redis"
   caption: 'Photo by <u><a href="https://unsplash.com/photos/Nc5Q_CEcY44">Redis</a></u>'
 categories:
+  - "ALL"
   - "Redis"
-  - "Spring"  
 keywords:
   - "Redis"
   - "단기 심화 부트캠프"
   - "Sparta"
 ---
 ## 리더보드 기능
-![스크린샷](../../images/articles/redis/leaderboard.png "EPL 순위표")
+![스크린샷](../../../images/articles/redis/leaderboard.png "EPL 순위표")
 리더보드란 실시간 랭킹을 볼수있는 기능이다. 위에 사진은 축구순위표여서 다르긴하지만 순위표라는 점에서 사진을 가져왔다. 게임분야에서는 점수순위, 랭크순위 검색엔진이라면 실시간검색순위 이커머스 분야라면 실시간 인기상품과 같은 기능들을 보여주기 위해 사용할 수 있다.
 
 ## 인기상품 리더보드 만들기
@@ -99,7 +99,7 @@ public List<ItemDto> getMostSold() {
 * 테스트를 위해서 sql 쿼리문으로 데이터를 삽입해 놓았다. [👉🏻 해당 링크](https://github.com/jiminchur/Study_Redis/blob/2-2/com.sparta.redis.rank/src/main/resources/data.sql)
 
 * POST요청으로 데이터 여러번 요청 후 Redis의 데이터 확인하기
-![스크린샷](../../images/articles/redis/ranks-redis.png "Redis")
+![스크린샷](../../../images/articles/redis/ranks-redis.png "Redis")
 * 순위표 출력하기
-![스크린샷](../../images/articles/redis/ranks.png "GET - http://localhost:8080/items/ranks")
+![스크린샷](../../../images/articles/redis/ranks.png "GET - http://localhost:8080/items/ranks")
 

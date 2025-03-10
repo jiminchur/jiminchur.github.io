@@ -3,10 +3,11 @@ title: "[Redis] Redis란?"
 description: "Redis"
 date: "2024-08-05"
 banner:
-  src: "../../images/articles/redis/redis_img.png"
+  src: "../../../images/articles/redis/redis_img.png"
   alt: "Redis"
   caption: 'Photo by <u><a href="https://unsplash.com/photos/Nc5Q_CEcY44">Redis</a></u>'
 categories:
+  - "ALL"
   - "Redis"
 keywords:
   - "Redis"

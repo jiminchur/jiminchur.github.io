@@ -3,12 +3,12 @@ title: "[RabbitMQ] RabbitMQ 실습 (1)"
 description: "JAVA 단기 심화 부트캠프"
 date: "2024-08-14"
 banner:
-  src: "../../images/articles/rabbitmq/RabbitMQ-img.png"
+  src: "../../../images/articles/rabbitmq/RabbitMQ-img.png"
   alt: "JAVA 단기 심화 부트캠프"
   caption: 'Photo by <u><a href="https://unsplash.com/photos/Nc5Q_CEcY44">RabbitMQ</a></u>'
 categories:
+  - "ALL"
   - "RabbitMQ"
-  - "TIL"
 keywords:
   - "단기 심화 부트캠프"
   - "Sparta"
@@ -16,7 +16,7 @@ keywords:
 ---
 ## RabbitMQ를 실습을 진행해보자
 실습에 앞서 전체적인 아키텍처를 그려보면 다음과 같다.
-![스크린샷](../../images/articles/rabbitmq/rabbitmq-drawio.png "RabbitMQ 아키텍처")
+![스크린샷](../../../images/articles/rabbitmq/rabbitmq-drawio.png "RabbitMQ 아키텍처")
 
 Order쪽에서 market exchange를 통해 market.product, market.payment쪽으로 메세지를 전달하고 product쪽은 라운드 로빈 형식으로 로드벨런싱으로 순차적으로 받는 실습과 기본적인 메시징 큐형식으로 받아보는 payment를 실습을 진행 할거다 이번 포스팅에서는 payment쪽을 해보고 다음 포스팅때는 product쪽을 진행해보자 
 
@@ -44,7 +44,7 @@ docker-compose up -d
 
 ### Order Application 생성하기
 * start.spring.io에 접속해서 프로젝트를 생성하자
-![스크린샷](../../images/articles/rabbitmq/order-spring-io.png "Order Application")
+![스크린샷](../../../images/articles/rabbitmq/order-spring-io.png "Order Application")
 
 * application.properties를 삭제하고 application.yml로 생성한뒤 다음과 같이 설정한다.
 ```
@@ -146,16 +146,16 @@ public class OrderController {
 ### Order Application 실행 해보기
 * 실행 후 http://localhost:8080/order/1 로 접속해보면 "Order complete"이라고 잘 뜨는걸 확인할 수 있다.
 * localhost:15672에 접속을 해보면 다음과 같다.
-![스크린샷](../../images/articles/rabbitmq/topic-made.png "market exchange 생성")
-![스크린샷](../../images/articles/rabbitmq/queue-made.png "queue 생성")
-![스크린샷](../../images/articles/rabbitmq/binding-made.png "binding 생성")
+![스크린샷](../../../images/articles/rabbitmq/topic-made.png "market exchange 생성")
+![스크린샷](../../../images/articles/rabbitmq/queue-made.png "queue 생성")
+![스크린샷](../../../images/articles/rabbitmq/binding-made.png "binding 생성")
 > 우리가 Order Application에서 생성한 exchange, queue, binding이 생성 되어있는걸 확인 할 수가 있다.
 
 아직은 프로듀서쪽에서 메세지를 전달해 큐에 적재만 되어있고 이제 payment컨슈머를 생성해서 받아보는걸 해보자
 
 ### Payment Application 생성하기
 * start.spring.io에 접속해서 프로젝트를 생성하자
-![스크린샷](../../images/articles/rabbitmq/payment-spring-io.png "Payment Application")
+![스크린샷](../../../images/articles/rabbitmq/payment-spring-io.png "Payment Application")
 
 * application.properties 삭제 후 application.yml 생성하기
 ```
@@ -195,9 +195,9 @@ public class PaymentEndpoint {
 ```
 > @RabbitListener 어노테이션을 이용하여 queue에 적재 되어있는 메세지를 받아주고 제대로 오는지 log를 찍어 확인해보자
 
-![스크린샷](../../images/articles/rabbitmq/log-payment.png "Payment Application - log")
+![스크린샷](../../../images/articles/rabbitmq/log-payment.png "Payment Application - log")
 > 로그기록을 보면 잘오는걸 확인 할 수가 있다. 그렇다면 localhost:15672에 접속해보자
-![스크린샷](../../images/articles/rabbitmq/payment-try.png "localhost:15672")
+![스크린샷](../../../images/articles/rabbitmq/payment-try.png "localhost:15672")
 > 전에 적재 되어 있던 market.payment쪽에 메세지가 1에서 0으로 바뀐걸 확인할 수 있다.
 
 ## 다음에는..

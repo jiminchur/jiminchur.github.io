@@ -7,8 +7,8 @@ banner:
   alt: "[Gatsby / Github Blog] gatsby-theme-portfolio-minimal 폴더 상세 정리해보기 (2)"
   caption: 'Photo by <u><a href="https://unsplash.com/photos/Nc5Q_CEcY44">Gatsby</a></u>'
 categories:
-  - "Github Blog"
-  - "Gatsby"
+  - "ALL"
+  - "Blog"
 keywords:
   - "Gitub Blog"
   - "Gatsby"

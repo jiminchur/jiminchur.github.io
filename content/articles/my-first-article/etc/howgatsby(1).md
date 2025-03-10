@@ -7,8 +7,8 @@ banner:
   alt: "Github Blog jekyll에서 Gatsby이전하기(1)"
   caption: 'Photo by <u><a href="https://unsplash.com/photos/Nc5Q_CEcY44">Gatsby</a></u>'
 categories:
-  - "Github Blog"
-  - "Gatsby"
+  - "ALL"
+  - "Blog"
 keywords:
   - "Gitub Blog"
   - "Gatsby"

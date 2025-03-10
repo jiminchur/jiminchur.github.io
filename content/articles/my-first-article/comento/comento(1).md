@@ -7,8 +7,8 @@ banner:
   alt: "코멘토 DB 직무부트캠프"
   caption: 'Photo by <u><a href="https://unsplash.com/photos/Nc5Q_CEcY44">Comento</a></u>'
 categories:
-  - "Comento"
-  - "직무부트캠프"
+  - "ALL"
+  - "회고"
 keywords:
   - "Comento"
   - "직무부트캠프"
@@ -22,7 +22,7 @@ keywords:
 코멘토에는 현재 여러개의 직무부트 캠프가 존재한다.
 
 여러가지 직종 여러가지 직업을 인턴이 되어봐서 한달동안 진행할 수 있게 해준다.
-
+s
 ![스크린샷](../../../images/articles/comento/comento_1_2.png)
 취업에 관한 고민이나 직장인에 관한 고민들을 나눌수 있는 커뮤니티 까지 존재하는 걸 알수가있다.
 

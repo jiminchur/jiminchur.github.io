@@ -7,8 +7,8 @@ banner:
   alt: "파이썬 기초"
   caption: 'Photo by <u><a href="https://unsplash.com/photos/Nc5Q_CEcY44">Google</a></u>'
 categories:
+  - "ALL"
   - "Python"
-  - "기초"
 keywords:
   - "Python"
   - "기초"

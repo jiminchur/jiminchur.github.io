@@ -7,6 +7,7 @@ banner:
   alt: "나혼자 Kafka 레벨업"
   caption: 'Photo by <u><a href="https://unsplash.com/photos/Nc5Q_CEcY44">kafka</a></u>'
 categories:
+  - "ALL"  
   - "Kafka"
 keywords:
   - "Kafka"

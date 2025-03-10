@@ -7,8 +7,8 @@ banner:
   alt: "코멘토 DB 직무부트캠프"
   caption: 'Photo by <u><a href="https://unsplash.com/photos/Nc5Q_CEcY44">Comento</a></u>'
 categories:
-  - "Comento"
-  - "직무부트캠프"
+  - "ALL"
+  - "회고"
 keywords:
   - "Comento"
   - "직무부트캠프"

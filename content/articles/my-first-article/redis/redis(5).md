@@ -3,12 +3,12 @@ title: "[Redis] HttpSession과 Session Clustering"
 description: "Redis"
 date: "2024-08-06"
 banner:
-  src: "../../images/articles/redis/redis_img.png"
+  src: "../../../images/articles/redis/redis_img.png"
   alt: "Redis"
   caption: 'Photo by <u><a href="https://unsplash.com/photos/Nc5Q_CEcY44">Redis</a></u>'
 categories:
+  - "ALL"
   - "Redis"
-  - "Spring"  
 keywords:
   - "Redis"
   - "단기 심화 부트캠프"
@@ -26,7 +26,7 @@ SpringBoot를 사용하면, Tomcat 서버가 세션을 생성한다. 그리고 J
 
 ### 실습해보기
 * com.sparata.redis 서버 생성하기
-![스크린샷](../../images/articles/redis/2-1-redis-spring.png "com.sparata.redis")
+![스크린샷](../../../images/articles/redis/2-1-redis-spring.png "com.sparata.redis")
 * SessionController.java 파일 생성하기
 ```
 @RestController
@@ -50,8 +50,8 @@ public class SessionController {
 }
 ```
 * test 하기
-![스크린샷](../../images/articles/redis/2-1-test-1.png "http://localhost:8080/set?q=owen")
-![스크린샷](../../images/articles/redis/2-1-test-2.png "http://localhost:8080/get")
+![스크린샷](../../../images/articles/redis/2-1-test-1.png "http://localhost:8080/set?q=owen")
+![스크린샷](../../../images/articles/redis/2-1-test-2.png "http://localhost:8080/get")
 
 ### Scale-Out Test
 사용자가 급증해서 Scale-Out를 했다. 지금 현재 A서버,B서버가 있다고 하면 사용자가 A 서버로 요청을 했다가, B 서버로 요청을 하게 된다면 세션이 유지될 수 있을까?? 한번 알아보자
@@ -61,9 +61,9 @@ public class SessionController {
 여기서 자세하게 다루니 추가적으로 적진 않겠다.
 
 * Redis를 연결하지 않고 우선 test
-![스크린샷](../../images/articles/redis/2-1-tom-session.png "http://localhost:8080/set?q=tom")
-![스크린샷](../../images/articles/redis/2-1-tom-get.png "http://localhost:8080/get")
-![스크린샷](../../images/articles/redis/2-1-8081-null.png "http://localhost:8081/get")
+![스크린샷](../../../images/articles/redis/2-1-tom-session.png "http://localhost:8080/set?q=tom")
+![스크린샷](../../../images/articles/redis/2-1-tom-get.png "http://localhost:8080/get")
+![스크린샷](../../../images/articles/redis/2-1-8081-null.png "http://localhost:8081/get")
 
 8080포트에서는 정상적으로 작동을 했지만 8081로 오니까 null로 리턴되는 걸 알 수가있다.
 
@@ -85,9 +85,9 @@ public class SessionController {
 implementation 'org.springframework.session:spring-session-data-redis'
 ```
 * 원래 안됬던 8081 작동 되는지 확인하기
-![스크린샷](../../images/articles/redis/2-1-tom-8081.png "http://localhost:8081/get")
+![스크린샷](../../../images/articles/redis/2-1-tom-8081.png "http://localhost:8081/get")
 * 더이상 Tomcat을 사용하지 않기 때문에 JSESSIONID 대신 SESSION이라는 새로운 쿠키를 사용
 * Redis 확인하기
-![스크린샷](../../images/articles/redis/2-1-redis-web.png "Redis")
+![스크린샷](../../../images/articles/redis/2-1-redis-web.png "Redis")
 
 잘 작동하는 걸 확인 할 수가 있다.

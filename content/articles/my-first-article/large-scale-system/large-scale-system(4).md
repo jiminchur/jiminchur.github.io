@@ -7,8 +7,8 @@ banner:
   alt: "JAVA 단기 심화 부트캠프"
   caption: 'Photo by <u><a href="https://unsplash.com/photos/Nc5Q_CEcY44">Pinterest</a></u>'
 categories:
+  - "ALL"
   - "대규모 시스템"
-  - "TIL"
 keywords:
   - "JAVA" 
   - "단기 심화 부트캠프"

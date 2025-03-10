@@ -3,12 +3,12 @@ title: "[대규모 시스템] 동시 접속자와 초당 요청량"
 description: "JAVA 단기 심화 부트캠프"
 date: "2024-08-13"
 banner:
-  src: "../../images/articles/large-scale/large-scale-img.jpeg"
+  src: "../../../images/articles/large-scale/large-scale-img.jpeg"
   alt: "JAVA 단기 심화 부트캠프"
   caption: 'Photo by <u><a href="https://unsplash.com/photos/Nc5Q_CEcY44">Pinterest</a></u>'
 categories:
+  - "ALL"
   - "대규모 시스템"
-  - "TIL"
 keywords:
   - "JAVA" 
   - "단기 심화 부트캠프"

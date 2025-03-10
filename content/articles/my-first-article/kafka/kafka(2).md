@@ -7,8 +7,8 @@ banner:
   alt: "JAVA 단기 심화 부트캠프"
   caption: 'Photo by <u><a href="https://unsplash.com/photos/Nc5Q_CEcY44">kafka</a></u>'
 categories:
+  - "ALL"
   - "Kafka"
-  - "TIL"
 keywords:
   - "단기 심화 부트캠프"
   - "Sparta"

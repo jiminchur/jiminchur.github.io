@@ -3,10 +3,11 @@ title: "[Linux 기초] 커널과 셀"
 description: "Linux 기초"
 date: "2024-01-01"
 banner:
-  src: "../../images/articles/linux/linux_img.png"
+  src: "../../../images/articles/linux/linux_img.png"
   alt: "Linux 기초"
   caption: 'Photo by <u><a href="https://unsplash.com/photos/Nc5Q_CEcY44">Google</a></u>'
 categories:
+  - "ALL"
   - "Linux"
 keywords:
   - "Linux"
@@ -29,7 +30,6 @@ keywords:
 ```
 [사용자이름]@[호스트 이름]:~$
 ```
-![Alt text](/img/Linux01.png)
 * 셸의 프롬프트(prompt)라고 함
 * 프롬프트는 사용자에게 어떤 결정을 내리도록 한다는 의미
 * 즉, 셸이 사용자에게 명령어를 받아들일 준비가 되었음을 나타낸다고 보면 됨
