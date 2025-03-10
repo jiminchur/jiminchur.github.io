@@ -3,7 +3,7 @@ title: "[Database] 트랜잭션 처리"
 description: "학점은행제"
 date: "2025-02-06"
 banner:
-  src: "../../../images/articles/cs/database_img.png"
+  src: "../../../../images/articles/cs/database_img.png"
   alt: "학점은행제"
   caption: 'Photo by <u><a href="https://unsplash.com/photos/Nc5Q_CEcY44">Google</a></u>'
 categories:

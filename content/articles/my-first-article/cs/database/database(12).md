@@ -3,7 +3,7 @@ title: "[Database] 디스크 저장, 파일 구조, 인덱스 구조"
 description: "학점은행제"
 date: "2025-02-20"
 banner:
-  src: "../../../images/articles/cs/database_img.png"
+  src: "../../../../images/articles/cs/database_img.png"
   alt: "학점은행제"
   caption: 'Photo by <u><a href="https://unsplash.com/photos/Nc5Q_CEcY44">Google</a></u>'
 categories:

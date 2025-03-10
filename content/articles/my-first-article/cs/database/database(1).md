@@ -3,7 +3,7 @@ title: "[Database] 데이터베이스 시스템 개요 및 사용자"
 description: "학점은행제"
 date: "2024-12-05"
 banner:
-  src: "../../../images/articles/cs/database_img.png"
+  src: "../../../../images/articles/cs/database_img.png"
   alt: "학점은행제"
   caption: 'Photo by <u><a href="https://unsplash.com/photos/Nc5Q_CEcY44">Google</a></u>'
 categories:

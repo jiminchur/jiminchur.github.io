@@ -3,7 +3,7 @@ title: "[Database] 데이터베이스 보안 및 확장모델"
 description: "학점은행제"
 date: "2025-02-27"
 banner:
-  src: "../../../images/articles/cs/database_img.png"
+  src: "../../../../images/articles/cs/database_img.png"
   alt: "학점은행제"
   caption: 'Photo by <u><a href="https://unsplash.com/photos/Nc5Q_CEcY44">Google</a></u>'
 categories:

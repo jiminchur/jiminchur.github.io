@@ -3,7 +3,7 @@ title: "[Database] 엔터티-관계 데이터모델"
 description: "학점은행제"
 date: "2024-12-19"
 banner:
-  src: "../../../images/articles/cs/database_img.png"
+  src: "../../../../images/articles/cs/database_img.png"
   alt: "학점은행제"
   caption: 'Photo by <u><a href="https://unsplash.com/photos/Nc5Q_CEcY44">Google</a></u>'
 categories:
