@@ -5,12 +5,16 @@
 <li><strong>트랜잭션의 정의 및 특성</strong>
 <ul>
 <li><strong>트랜잭션(Transaction):</strong> 데이터베이스에서 하나의 논리적 작업 단위로, 여러 데이터 연산(read, write 등)이 하나로 묶여 수행됩니다.</li>
-<li><strong>ACID 특성:</strong></li>
+<li><strong>ACID 특성:</strong>
+<ul>
+<li><strong>원자성(Atomicity):</strong> 모든 작업이 전부 실행되거나 전혀 실행되지 않아야 함</li>
+<li><strong>일관성(Consistency):</strong> 트랜잭션 완료 후 데이터베이스는 항상 일관된 상태를 유지</li>
+<li><strong>고립성(Isolation):</strong> 각 트랜잭션은 서로 간섭 없이 독립적으로 실행됨</li>
+<li><strong>지속성(Durability):</strong> 커밋된 결과는 영구적으로 반영됨</li>
 </ul>
-• <strong>원자성(Atomicity):</strong> 모든 작업이 전부 실행되거나 전혀 실행되지 않아야 함
-• <strong>일관성(Consistency):</strong> 트랜잭션 완료 후 데이터베이스는 항상 일관된 상태를 유지
-• <strong>고립성(Isolation):</strong> 각 트랜잭션은 서로 간섭 없이 독립적으로 실행됨
-• <strong>지속성(Durability):</strong> 커밋된 결과는 영구적으로 반영됨</li>
+</li>
+</ul>
+</li>
 <li><strong>시스템 유형</strong>
 <ul>
 <li><strong>단일 사용자 시스템:</strong> 한 번에 한 명만 사용</li>
