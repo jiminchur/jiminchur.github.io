@@ -3,12 +3,12 @@ title: "[Secure Coding] SQL Injection란 무엇일까??"
 description: "JAVA 단기 심화 부트캠프"
 date: "2024-08-19"
 banner:
-  src: "../../images/articles/secure/secure-coding-img.jpeg"
+  src: "../../../images/articles/secure/secure-coding-img.jpeg"
   alt: "JAVA 단기 심화 부트캠프"
   caption: 'Photo by <u><a href="https://unsplash.com/photos/Nc5Q_CEcY44">Google</a></u>'
 categories:
+  - "ALL"
   - "Secure Coding"
-  - "SQL Injection"
 keywords:
   - "JAVA" 
   - "단기 심화 부트캠프"

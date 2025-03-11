@@ -3,12 +3,12 @@ title: "[SpartaCodingClub] JAVA 단기 심화 부트캠프 TIL (10)"
 description: "JAVA 단기 심화 부트캠프"
 date: "2024-08-08"
 banner:
-  src: "../../images/articles/sparta/sparta_img.png"
+  src: "../../../images/articles/sparta/sparta_img.png"
   alt: "JAVA 단기 심화 부트캠프"
   caption: 'Photo by <u><a href="https://unsplash.com/photos/Nc5Q_CEcY44">Sparta</a></u>'
 categories:
-  - "스파르타코딩클럽"
-  - "TIL"
+  - "ALL"
+  - "Sparta"
 keywords:
   - "JAVA" 
   - "단기 심화 부트캠프"

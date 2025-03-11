@@ -3,7 +3,7 @@ title: "[정규표현식] 기본 "
 description: "정규표현식"
 date: "2025-02-01"
 banner:
-  src: "../../images/articles/word.jpeg"
+  src: "../../../images/articles/word.jpeg"
   alt: "정규표현식"
   caption: 'Photo by <u><a href="https://unsplash.com/photos/Nc5Q_CEcY44">Google</a></u>'
 categories:

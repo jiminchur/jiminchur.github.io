@@ -3,12 +3,12 @@ title: "[SpartaCodingClub] JAVA 단기 심화 부트캠프"
 description: "JAVA 단기 심화 부트캠프"
 date: "2024-07-29"
 banner:
-  src: "../../images/articles/sparta/sparta_img.png"
+  src: "../../../images/articles/sparta/sparta_img.png"
   alt: "JAVA 단기 심화 부트캠프"
   caption: 'Photo by <u><a href="https://unsplash.com/photos/Nc5Q_CEcY44">Sparta</a></u>'
 categories:
-  - "스파르타코딩클럽"
-  - "TIL"
+  - "ALL"
+  - "Sparta"
 keywords:
   - "JAVA"
   - "단기 심화 부트캠프"
@@ -51,7 +51,7 @@ keywords:
 
 사전 OT랑 첫날 수업때는 ZOOM으로 진행 했는데 이후부터는 zep이라는 메타버스 플랫폼에서 진행 한다고 한다.
 
-![스크린샷](../../images/articles/sparta/avarta.png "나의 zep 아바타이다.")
+![스크린샷](../../../images/articles/sparta/avarta.png "나의 zep 아바타이다.")
 
 ## 🫡 안녕 나의 팀원들
 

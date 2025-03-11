@@ -3,12 +3,12 @@ title: "[SpartaCodingClub] JAVA 단기 심화 부트캠프 TIL (4)"
 description: "JAVA 단기 심화 부트캠프"
 date: "2024-08-01"
 banner:
-  src: "../../images/articles/sparta/sparta_img.png"
+  src: "../../../images/articles/sparta/sparta_img.png"
   alt: "JAVA 단기 심화 부트캠프"
   caption: 'Photo by <u><a href="https://unsplash.com/photos/Nc5Q_CEcY44">Sparta</a></u>'
 categories:
-  - "스파르타코딩클럽"
-  - "TIL"
+  - "ALL"
+  - "Sparta"
 keywords:
   - "JAVA"
   - "단기 심화 부트캠프"
@@ -60,7 +60,7 @@ public class Solution {
 오늘의 강의 목표는 1-6,7,8을 수강하고 복습하는게 목표이다. 어제에 이어서 시작해보겠다.
 
 ### 서킷브레이커
-![스크린샷](../../images/articles/sparta/srukit.jpeg "서킷브레이커 상태 전이도(출처: https://resilience4j.readme.io/docs/circuitbreaker)")
+![스크린샷](../../../images/articles/sparta/srukit.jpeg "서킷브레이커 상태 전이도(출처: https://resilience4j.readme.io/docs/circuitbreaker)")
 > 마이크로 서비스 사이의 통신이 이루어지는 대규모 시스테 환경에서 느리거나 응답하지 않은 다운스트림 서비스가 발생했을 때 그 피해를 최소화시키는 것이 서킷 브레이커의 가장 큰 핵심이라고 할 수 있다.
 
 #### Resilience4j란?
@@ -112,7 +112,7 @@ resilience4j:
   * Open -> Half-open 상태로 전환되기전 대기시간
 
 #### fallback 매커니즘 설명
-![스크린샷](../../images/articles/sparta/open-close.png "fallback 매커니즘")
+![스크린샷](../../../images/articles/sparta/open-close.png "fallback 매커니즘")
 1. 서킷브레이커는 처음에 Colsed 상태로 유지 된다.
 2. 성공을 하면 그대로 유지
 3. 실패를 해도 그대로 유지
@@ -123,7 +123,7 @@ resilience4j:
 8. Half-Open 상태에서 계속 성공을 하게되면 Closed 상태가 된다.
 
 #### 실습하기
-![스크린샷](../../images/articles/sparta/r4j-do.png "com.spring-cloud.resilience4j.sample 생성하기")
+![스크린샷](../../../images/articles/sparta/r4j-do.png "com.spring-cloud.resilience4j.sample 생성하기")
 * 의존성 추가
 ```
 dependencies {
@@ -248,7 +248,7 @@ resilience4j:
 
 ### 보안구성
 * 프로젝트 생성
-![스크린샷](../../images/articles/sparta/auth-start.png "com.spring-cloud.eureka.clent.auth")
+![스크린샷](../../../images/articles/sparta/auth-start.png "com.spring-cloud.eureka.clent.auth")
 * 의존성 추가
 ```
 implementation 'io.jsonwebtoken:jjwt:0.12.6'
@@ -459,18 +459,18 @@ public class AuthController {
   ```
 #### 실행해보기
 * Eureka에 다 등록되어 있는지 확인
-![스크린샷](../../images/articles/sparta/eureka-auth.png "http://localhost:19090/")
+![스크린샷](../../../images/articles/sparta/eureka-auth.png "http://localhost:19090/")
 * auth쪽에 user_id 을 papa로 입력하고 test
-![스크린샷](../../images/articles/sparta/test-1.png "http://localhost:19095/auth/signIn?user_id=papa test하기")
+![스크린샷](../../../images/articles/sparta/test-1.png "http://localhost:19095/auth/signIn?user_id=papa test하기")
 * apigateway를 통해 product쪽 접속 시도
   * 로그인을 하지 않아 토큰이 없기 때문에 401 error가 뜸
-![스크린샷](../../images/articles/sparta/test-2.png "http://localhost:19091/product test하기")
+![스크린샷](../../../images/articles/sparta/test-2.png "http://localhost:19091/product test하기")
 * apigateway를 통해 auth쪽 user_id 을 papa로 입력하고 test접속 시도
   * 성공
-![스크린샷](../../images/articles/sparta/test-3.png "http://localhost:19091/auth/signIn?user_id=papa test하기")
+![스크린샷](../../../images/articles/sparta/test-3.png "http://localhost:19091/auth/signIn?user_id=papa test하기")
 * 위에 토큰을 가지고 다시 apigateway를 통해 product쪽 접속 시도
   * 성공
-![스크린샷](../../images/articles/sparta/test-4.png "http://localhost:19091/product header에 토큰 추가해서 test하기")
+![스크린샷](../../../images/articles/sparta/test-4.png "http://localhost:19091/product header에 토큰 추가해서 test하기")
 
 ### ✍🏻 오늘 공부를 마치며
 오늘도 서킷브레이커, api gateway, 보안 구성을 공부하면서 작동 방식이 매우 신기하고 재밌었다. 보안구성쪽이랑 api gateway부분의 필터쪽의 코드는 자주 보면서 익혀야 할거 같다. 새롭게 보는 부분들이 있어서 주말동안에 공부를 좀더 해야할거 같다. 어제랑 오늘 내가 계획했던 부분들에 대해서는 공부를 잘 수행 한거 같다. 오늘 다른 분들이 올린 TIL를 구경을 좀 했는데 뭔가 내가 맞게 하고 있는건가?? 싶은 생각이 들긴 했지만 TIL자체가 오늘 내가 한 공부에 대한 내용을 적는 것이기 때문에 나는 내가 적는 방식이 좋다고 생각을 다잡았다. 근데 글이 너무 길어 중간 중간에 내용들을 다른 포스팅글로 빼고 여기에다가는 링크로 채워 놓는것도 좋은 방식일거 같다.
