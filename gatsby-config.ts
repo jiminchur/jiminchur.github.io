@@ -3,13 +3,13 @@ import dotenv from 'dotenv'
 
 dotenv.config()
 
-const SITE_URL = 'https://jiminchur.github.io'
+// const SITE_URL = 'https://jiminchur.github.io'
 
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Minchur Gatsby Blog`,
     description: '여기에 원하는 설명을 추가해주세요!',
-    siteUrl: SITE_URL,
+    siteUrl: 'https://jiminchur.github.io',
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
@@ -40,7 +40,7 @@ const config: GatsbyConfig = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: SITE_URL,
+        siteUrl: 'https://jiminchur.github.io',
         stripQueryString: true,
       },
     },
