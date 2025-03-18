@@ -38,16 +38,28 @@ const Menu = styled.div`
 export default function Header() {
   return (
     <Wrapper>
-      <Title to="/">Developer Hyun</Title>
+      <Title to="/">DataEngineer Minchur</Title>
 
       <Menu>
-        <a href="#" target="_blank">
+        <a
+          href="https://github.com/jiminchur"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <AiFillGithub />
         </a>
-        <a href="#" target="_blank">
+        <a
+          href="https://www.instagram.com/your_instagram_username"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <AiOutlineInstagram />
         </a>
-        <a href="#" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/%EB%AF%BC%EC%B2%A0-%EC%A7%80-30a8912b1/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <AiFillLinkedin />
         </a>
       </Menu>

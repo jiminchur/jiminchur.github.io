@@ -48,7 +48,7 @@ export default function Introduction() {
       </ProfileImage>
 
       <SubText>Nice to Meet You!</SubText>
-      <MainText>I&apos;m Junior Frontend Developer Hyun</MainText>
+      <MainText>I&apos;m DataEngineer Minchur</MainText>
     </div>
   )
 }

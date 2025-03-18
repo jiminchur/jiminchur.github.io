@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 
 const ATTRIBUTES = {
   src: '<https://utteranc.es/client.js>',
-  repo: '[username]/[username].github.io', // 유저명이 test1234이면 test1234/test1234.github.io로 지정해주세요.
+  repo: 'jiminchur/jiminchur.github.io', // 유저명이 test1234이면 test1234/test1234.github.io로 지정해주세요.
   'issue-term': 'pathname',
   label: 'Comment',
   theme: `github-light`,
