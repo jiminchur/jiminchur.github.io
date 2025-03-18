@@ -1,28 +1,56 @@
-import type { GatsbyConfig } from "gatsby";
+import type { GatsbyConfig } from 'gatsby'
+import dotenv from 'dotenv'
+
+dotenv.config()
+
+const SITE_URL = 'https://jiminchur.github.io'
 
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Minchur Gatsby Blog`,
-    siteUrl: `https://www.yourdomain.tld`
+    description: '여기에 원하는 설명을 추가해주세요!',
+    siteUrl: SITE_URL,
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
-  plugins: [{
-    resolve: 'gatsby-source-contentful',
-    options: {
-      "accessToken": "DHUAqyZKk0tlbNoagKo1hPVhWRE6Z7Ej4PXQowDQY20",
-      "spaceId": "jlqgu0ptb6o6"
-    }
-  }, "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", "gatsby-plugin-styled-components", "gatsby-plugin-sitemap", {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "images",
-      "path": "./src/images/"
+  jsxRuntime: 'automatic',
+  plugins: [
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+      },
     },
-    __key: "images"
-  }]
-};
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-styled-components',
+    'gatsby-plugin-sitemap',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: './src/images/',
+      },
+      __key: 'images',
+    },
+    {
+      resolve: 'gatsby-plugin-canonical-urls',
+      options: {
+        siteUrl: SITE_URL,
+        stripQueryString: true,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
+  ],
+}
 
-export default config;
+export default config
