@@ -18,7 +18,7 @@ export default function Footer() {
   return (
     <Wrapper>
       <div>Thank You for Visiting My Blog, Have a Good Day 😆</div>
-      <div>Copyright © 2024 Developer Hyun</div>
+      <div>Copyright © 2025 Minchur</div>
     </Wrapper>
   )
 }

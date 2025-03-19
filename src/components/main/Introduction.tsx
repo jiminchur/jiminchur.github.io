@@ -1,17 +1,33 @@
 import styled from 'styled-components'
 import { StaticImage } from 'gatsby-plugin-image'
 
+const Container = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 60px; // 이미지와 텍스트 간격 조절
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+  }
+`
+
 const ProfileImage = styled.div`
   overflow: hidden;
   width: 140px;
   height: 140px;
-  margin-bottom: 30px;
   border-radius: 50%;
 
   @media (max-width: 768px) {
     width: 100px;
     height: 100px;
   }
+`
+
+const TextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `
 
 const SubText = styled.div`
@@ -42,13 +58,15 @@ const MainText = styled.div`
 
 export default function Introduction() {
   return (
-    <div>
+    <Container>
       <ProfileImage>
         <StaticImage src="../../images/thumbnail.png" alt="Profile Image" />
       </ProfileImage>
 
-      <SubText>Nice to Meet You!</SubText>
-      <MainText>I&apos;m DataEngineer Minchur</MainText>
-    </div>
+      <TextContainer>
+        <SubText>Nice to Meet You!</SubText>
+        <MainText>I&apos;m DataEngineer Minchur</MainText>
+      </TextContainer>
+    </Container>
   )
 }
