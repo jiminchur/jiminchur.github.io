@@ -24,6 +24,7 @@ const config: GatsbyConfig = {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
         enableTags: true,
         downloadLocal: true,
+        useNameForId: false,
       },
     },
     'gatsby-plugin-image',
