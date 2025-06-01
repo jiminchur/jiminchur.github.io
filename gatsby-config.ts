@@ -22,6 +22,8 @@ const config: GatsbyConfig = {
       options: {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
         spaceId: process.env.CONTENTFUL_SPACE_ID,
+        enableTags: true,
+        downloadLocal: true,
       },
     },
     'gatsby-plugin-image',
@@ -47,6 +49,8 @@ const config: GatsbyConfig = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
+        host: 'https://jiminchur.github.io/',
+        sitemap: 'https://jiminchur.github.io/sitemap-index.xml',
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },
@@ -55,6 +59,7 @@ const config: GatsbyConfig = {
       options: {
         trackingId: process.env.GOOGLE_ANALYTICS_ID,
         head: true, // 애널리틱스 스크립트를 Head 태그 내에 둘지에 대한 속성입니다.
+        anonymize: true, // IP 익명화
       },
     },
   ],

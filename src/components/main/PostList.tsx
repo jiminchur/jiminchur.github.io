@@ -49,7 +49,7 @@ export default function PostList({ posts }: PostListProps) {
             category={category as string[]}
             thumbnail={thumbnail?.gatsbyImageData as IGatsbyImageData}
             description={description?.description as string}
-            slug={slug as string}
+            link={`/${slug}`}
             key={slug as string}
             data-grid-groupkey={groupKey}
           />

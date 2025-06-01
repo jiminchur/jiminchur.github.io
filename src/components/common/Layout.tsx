@@ -2,6 +2,7 @@ import { ReactNode } from 'react'
 import styled, { createGlobalStyle } from 'styled-components'
 import Header from './Header'
 import Footer from './Footer'
+import ErrorBoundary from './ErrorBoundary'
 
 type LayoutProps = {
   children: ReactNode
@@ -22,6 +23,29 @@ const GlobalStyle = createGlobalStyle`
     min-height: 100%;
     height: 100%;
   }
+
+  /* 포커스 가시성 개선 (접근성) */
+  *:focus {
+    outline: 2px solid #0056b3;
+    outline-offset: 2px;
+  }
+
+  /* 스킵 링크 (접근성) */
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    z-index: 1000;
+    background: #000;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+
+  .skip-link:focus {
+    top: 6px;
+  }
 `
 
 const Wrapper = styled.div`
@@ -41,7 +65,7 @@ const Wrapper = styled.div`
   }
 `
 
-const Contents = styled.div`
+const Contents = styled.main`
   margin: 80px 0;
 
   @media (max-width: 1024px) {
@@ -51,12 +75,21 @@ const Contents = styled.div`
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <Wrapper>
-      <GlobalStyle />
+    <ErrorBoundary>
+      <Wrapper>
+        <GlobalStyle />
 
-      <Header />
-      <Contents>{children}</Contents>
-      <Footer />
-    </Wrapper>
+        {/* 접근성 개선: 스킵 링크 */}
+        <a href="#main-content" className="skip-link">
+          메인 콘텐츠로 건너뛰기
+        </a>
+
+        <Header />
+        <Contents id="main-content" role="main">
+          {children}
+        </Contents>
+        <Footer />
+      </Wrapper>
+    </ErrorBoundary>
   )
 }

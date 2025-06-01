@@ -7,13 +7,21 @@
         "plugin:react/recommended",
         "plugin:react/jsx-runtime",
         "plugin:@typescript-eslint/recommended",
+        "plugin:security/recommended",
+        "plugin:jsx-a11y/recommended",
         "plugin:prettier/recommended"
     ],
     "parser": "@typescript-eslint/parser",
-    "plugins": ["@typescript-eslint", "react", "prettier"],
+    "plugins": ["@typescript-eslint", "react", "security", "jsx-a11y", "prettier"],
     "settings": {
         "react": {
             "version": "detect"
         }
+    },
+    "rules": {
+        "security/detect-object-injection": "warn",
+        "jsx-a11y/alt-text": "error",
+        "jsx-a11y/anchor-has-content": "error",
+        "jsx-a11y/no-autofocus": "warn"
     }
 }
