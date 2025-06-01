@@ -23,7 +23,7 @@ const config: GatsbyConfig = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
         spaceId: process.env.CONTENTFUL_SPACE_ID,
         enableTags: true,
-        downloadLocal: true,
+        downloadLocal: false,
         useNameForId: false,
       },
     },
