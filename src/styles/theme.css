@@ -1,0 +1,105 @@
+/* Light theme (default) */
+:root,
+[data-theme="light"] {
+  /* Colors */
+  --primary-color: #007acc;
+  --primary-hover: #005a99;
+  --success-color: #38a169;
+  --success-hover: #2f855a;
+  
+  /* Background colors */
+  --bg-color: #ffffff;
+  --card-bg: #ffffff;
+  --input-bg: #ffffff;
+  --dropdown-bg: #ffffff;
+  --hover-bg: #f8f9fa;
+  --nav-bg: #f8f9fa;
+  --nav-hover-bg: #e9ecef;
+  --related-posts-bg: #f8f9fa;
+  
+  /* Text colors */
+  --text-color: #333333;
+  --secondary-text: #666666;
+  --meta-color: #666666;
+  --description-color: #666666;
+  --placeholder-color: #999999;
+  --icon-color: #666666;
+  
+  /* Border colors */
+  --border-color: #e9ecef;
+  --code-border: #4a5568;
+  
+  /* Code block colors */
+  --code-block-bg: #2d3748;
+  --code-header-bg: #1a202c;
+  --code-language-color: #a0aec0;
+  --copy-button-bg: #4a5568;
+  --copy-button-hover: #718096;
+  --scrollbar-track: #1a202c;
+  --scrollbar-thumb: #4a5568;
+  --scrollbar-thumb-hover: #718096;
+  
+  /* Inline code colors */
+  --inline-code-bg: #f1f3f5;
+  --inline-code-color: #c7254e;
+  
+  /* Tag colors */
+  --tag-bg: #e9ecef;
+  --tag-color: #495057;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  /* Colors */
+  --primary-color: #4299e1;
+  --primary-hover: #3182ce;
+  --success-color: #48bb78;
+  --success-hover: #38a169;
+  
+  /* Background colors */
+  --bg-color: #1a202c;
+  --card-bg: #2d3748;
+  --input-bg: #2d3748;
+  --dropdown-bg: #2d3748;
+  --hover-bg: #4a5568;
+  --nav-bg: #2d3748;
+  --nav-hover-bg: #4a5568;
+  --related-posts-bg: #2d3748;
+  
+  /* Text colors */
+  --text-color: #e2e8f0;
+  --secondary-text: #a0aec0;
+  --meta-color: #a0aec0;
+  --description-color: #cbd5e0;
+  --placeholder-color: #718096;
+  --icon-color: #a0aec0;
+  
+  /* Border colors */
+  --border-color: #4a5568;
+  --code-border: #718096;
+  
+  /* Code block colors (darker in dark mode) */
+  --code-block-bg: #1a202c;
+  --code-header-bg: #0f131a;
+  --code-language-color: #718096;
+  --copy-button-bg: #2d3748;
+  --copy-button-hover: #4a5568;
+  --scrollbar-track: #0f131a;
+  --scrollbar-thumb: #2d3748;
+  --scrollbar-thumb-hover: #4a5568;
+  
+  /* Inline code colors */
+  --inline-code-bg: #2d3748;
+  --inline-code-color: #f687b3;
+  
+  /* Tag colors */
+  --tag-bg: #4a5568;
+  --tag-color: #e2e8f0;
+}
+
+/* Base body styling */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+} 

@@ -13,6 +13,16 @@ TypeScript와 Contentful을 활용한 현대적인 개인 블로그입니다. Ga
 - 🎨 **Styled Components**: CSS-in-JS로 컴포넌트 스타일링
 - 📊 **SEO 최적화**: 메타태그, 구조화 데이터, 사이트맵
 
+### ✨ v3.1.0 새로운 기능들
+
+- 🔍 **실시간 검색**: 제목, 카테고리, 설명을 통한 빠른 포스트 검색
+- 🌙 **다크 모드**: 시스템 설정 감지 및 사용자 선택 기억
+- 🔗 **관련 포스트**: 카테고리 기반 스마트 추천 시스템
+- ⬆️ **스크롤 투 탑**: 부드러운 애니메이션과 함께 페이지 상단으로 이동
+- 📋 **코드 블록 강화**: 복사 버튼, 언어 표시, 다크 모드 지원
+- 🧭 **포스트 네비게이션**: 이전/다음 포스트 간편 이동
+- 📖 **향상된 읽기 경험**: 최적화된 타이포그래피, 간격, 스타일링
+
 ## 🛠️ 기술 스택
 
 - **프레임워크**: Gatsby 5.x
@@ -41,11 +51,13 @@ minchur-gatsby-blog/
     ├── 📁 components/          # React 컴포넌트들
     │   ├── 📁 common/          # 공통 컴포넌트
     │   ├── 📁 main/            # 메인 페이지 컴포넌트
-    │   └── 📁 post/            # 포스트 관련 컴포넌트
+    │   ├── 📁 post/            # 포스트 관련 컴포넌트
+    │   └── 📁 ui/              # UI 컴포넌트 (v3.1.0+)
     ├── 📁 hooks/               # 커스텀 React Hooks
     ├── 📁 pages/               # Gatsby 페이지들
     ├── 📁 utils/               # 유틸리티 함수들
     ├── 📁 images/              # 이미지 리소스
+    ├── 📁 styles/              # 스타일 파일들 (v3.1.0+)
     └── 📄 gatsby-types.d.ts    # Gatsby GraphQL 타입 정의
 ```
 
@@ -54,18 +66,18 @@ minchur-gatsby-blog/
 #### 🔧 설정 파일들
 - `gatsby-config.ts` - Gatsby 플러그인, 사이트 메타데이터, Contentful 설정
 - `gatsby-ssr.tsx` - 보안 헤더(CSP, XSS 방지), 폰트 로딩, 페이지 래핑
-- `gatsby-browser.tsx` - 브라우저 측 설정
+- `gatsby-browser.tsx` - 브라우저 측 설정, 전역 스타일 임포트
 - `tsconfig.json` - TypeScript 컴파일러 옵션 및 경로 설정
 - `.eslintrc.json` - 코드 품질, 보안, 접근성 검사 규칙
 
 #### 📄 페이지 컴포넌트 (`src/pages/`)
-- `index.tsx` - 메인 홈페이지 (블로그 목록)
+- `index.tsx` - 메인 홈페이지 (블로그 목록, 검색 기능)
 - `404.tsx` - 404 에러 페이지
-- `{contentfulPost.slug}.tsx` - 동적 블로그 포스트 페이지
+- `{contentfulPost.slug}.tsx` - 동적 블로그 포스트 페이지 (네비게이션, 관련 포스트)
 
 #### 🧩 공통 컴포넌트 (`src/components/common/`)
-- `Layout.tsx` - 전체 페이지 레이아웃, ErrorBoundary, 접근성 개선
-- `Header.tsx` - 네비게이션 헤더
+- `Layout.tsx` - 전체 페이지 레이아웃, ErrorBoundary, 접근성 개선, ScrollToTop
+- `Header.tsx` - 네비게이션 헤더, 검색박스, 다크모드 토글
 - `Footer.tsx` - 페이지 푸터
 - `Seo.tsx` - SEO 메타태그, 보안 강화, 입력 검증
 - `ErrorBoundary.tsx` - React 에러 처리, 사용자 친화적 오류 메시지
@@ -79,21 +91,33 @@ minchur-gatsby-blog/
 #### 📝 포스트 컴포넌트 (`src/components/post/`)
 - `PostHead.tsx` - 포스트 헤더 (제목, 카테고리, 날짜, 썸네일)
 - `PostBody.tsx` - 포스트 본문 렌더링
-- `TableOfContents.tsx` - 목차 네비게이션
+- `TableOfContents.tsx` - 목차 네비게이션 (다크모드 지원)
 - `Comment.tsx` - Utterances 댓글 시스템 (보안 강화)
+- `RelatedPosts.tsx` - 카테고리 기반 관련 포스트 추천 (v3.1.0+)
+- `PostNavigation.tsx` - 이전/다음 포스트 네비게이션 (v3.1.0+)
+
+#### 🎨 UI 컴포넌트 (`src/components/ui/`) - v3.1.0+
+- `SearchBox.tsx` - 실시간 검색 기능
+- `DarkModeToggle.tsx` - 다크/라이트 모드 전환
+- `ScrollToTop.tsx` - 페이지 상단 이동 버튼
 
 #### 🎣 커스텀 Hooks (`src/hooks/`)
 - `useRenderRichText.tsx` - Contentful Rich Text 렌더링
 - `useTableOfContents.tsx` - 목차 자동 생성
+- `useDarkMode.tsx` - 다크모드 상태 관리 (v3.1.0+)
 
 #### 🔗 Rich Text 노드 컴포넌트 (`src/hooks/node/`)
 - `Heading.tsx` - 제목 태그 (h1-h3)
-- `Code.tsx` - 코드 블록 및 인라인 코드
+- `Code.tsx` - 코드 블록 및 인라인 코드 (복사 기능, 언어 표시) (v3.1.0+ 강화)
 - `Link.tsx` - 외부 링크 (보안 속성 포함)
 - `Image.tsx` - 이미지 컴포넌트
 - `Blockquote.tsx` - 인용구
 - `OrderedList.tsx` / `UnorderedList.tsx` - 순서/비순서 목록
 - `HorizontalRule.tsx` - 수평선
+
+#### 🎨 스타일 파일 (`src/styles/`) - v3.1.0+
+- `theme.css` - 다크/라이트 테마 CSS 변수
+- `reading.css` - 향상된 읽기 경험을 위한 타이포그래피 스타일
 
 #### 🛠️ 유틸리티 (`src/utils/`)
 - `env.ts` - 환경변수 검증 및 관리
@@ -151,6 +175,38 @@ npm run format:check # 코드 포맷 검사
 npm run audit       # 보안 취약점 검사
 ```
 
+## 🎯 주요 업데이트 (v3.1.0)
+
+### 🔍 검색 기능
+- **실시간 검색**: 타이핑과 동시에 결과 표시
+- **다중 필드 검색**: 제목, 카테고리, 설명 전체 검색
+- **키보드 지원**: Enter키로 포스트 이동
+- **반응형 디자인**: 모바일 최적화
+
+### 🌙 다크 모드
+- **시스템 설정 감지**: OS 다크모드 자동 적용
+- **사용자 설정 저장**: localStorage로 선택 기억
+- **부드러운 전환**: CSS transition 적용
+- **전역 테마**: 모든 컴포넌트 다크모드 지원
+
+### 🔗 관련 포스트 시스템
+- **스마트 추천**: 카테고리 기반 유사도 계산
+- **최대 3개 표시**: 가장 관련성 높은 포스트 우선
+- **레이아웃**: 이미지-텍스트 가로 배치
+- **반응형**: 모바일에서 세로 배치로 전환
+
+### 📋 코드 블록 강화
+- **복사 버튼**: 원클릭 코드 복사
+- **언어 표시**: 프로그래밍 언어 라벨
+- **다크모드**: 테마에 맞는 구문 강조
+- **커스텀 스크롤바**: 브라우저별 최적화
+
+### 📖 읽기 경험 개선
+- **타이포그래피**: 최적화된 폰트 크기와 줄 간격
+- **간격 조정**: 단락, 제목, 목록 간격 개선
+- **테이블 스타일**: 모던한 테이블 디자인
+- **이미지 처리**: 둥근 모서리, 그림자 효과
+
 ## 🔐 보안 기능
 
 ### 구현된 보안 조치
@@ -173,6 +229,7 @@ npm run lint        # 보안 규칙 포함 코드 검사
 - **스킵 링크**: 메인 콘텐츠로 바로 이동
 - **포커스 관리**: 명확한 포커스 표시
 - **색상 대비**: WCAG AA 기준 준수
+- **검색 접근성**: 키보드 검색 및 스크린 리더 지원 (v3.1.0+)
 
 ## 📊 SEO 최적화
 

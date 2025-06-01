@@ -3,6 +3,7 @@ import styled, { createGlobalStyle } from 'styled-components'
 import Header from './Header'
 import Footer from './Footer'
 import ErrorBoundary from './ErrorBoundary'
+import ScrollToTop from './ScrollToTop'
 
 type LayoutProps = {
   children: ReactNode
@@ -89,6 +90,7 @@ export default function Layout({ children }: LayoutProps) {
           {children}
         </Contents>
         <Footer />
+        <ScrollToTop />
       </Wrapper>
     </ErrorBoundary>
   )

@@ -18,9 +18,10 @@ const Wrapper = styled.div`
 
 const Title = styled.div`
   padding-bottom: 20px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid var(--border-color, #000000);
   font-size: 15px;
   font-weight: 600;
+  color: var(--text-color);
 `
 
 const Items = styled.div`
@@ -37,10 +38,17 @@ const Item = styled(({ className, children, to }: GatsbyLinkProps<unknown>) => (
   padding-left: ${({ $depth }) => $depth * 10}px;
   font-size: 13px;
   font-weight: ${({ $focused }) => ($focused ? 700 : 300)};
-  color: rgba(30, 31, 33, ${({ $focused }) => ($focused ? 1 : 0.5)});
+  color: ${({ $focused }) =>
+    $focused
+      ? 'var(--text-color)'
+      : 'var(--meta-color, rgba(30, 31, 33, 0.5))'};
   cursor: pointer;
   text-decoration: none;
-  transition: 0.1s all;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: var(--primary-color);
+  }
 `
 
 export default function TableOfContents({
