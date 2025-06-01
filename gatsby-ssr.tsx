@@ -27,6 +27,12 @@ export const onRenderBody: GatsbySSR['onRenderBody'] = ({
   // 보안 헤더와 기존 폰트 로딩 포함
   setHeadComponents([
     ...HeadComponents,
+    // Google Search Console 확인 메타태그
+    <meta
+      key="google-site-verification"
+      name="google-site-verification"
+      content="8S_Mw0mv7GLoU3RUjU4QDKWdAlp0HoRT2hSz0kvNIC0"
+    />,
     // Content Security Policy
     <meta
       key="csp"
