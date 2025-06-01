@@ -56,7 +56,7 @@ export default function SEO({
 }: SEOProps) {
   const {
     site: { siteMetadata },
-    file: { publicURL: defaultImage },
+    file,
   } = useStaticQuery(METADATA_QUERY)
 
   // 입력 검증 적용
@@ -65,7 +65,7 @@ export default function SEO({
     description:
       sanitizeString(description) || sanitizeString(siteMetadata.description),
     siteUrl: `${siteMetadata.siteUrl}${sanitizeUrl(pathname) || ''}`,
-    image: sanitizeUrl(image) || defaultImage,
+    image: sanitizeUrl(image) || file?.publicURL || '',
   }
 
   return (
