@@ -9,6 +9,7 @@ export interface Post {
   title: string
   date: string
   description: string
+  category: "Story" | "Tech"
   content: string
 }
 
@@ -29,6 +30,7 @@ export function getPostBySlug(slug: string): Post | null {
       title: data.title || 'Untitled',
       date: data.date || 'No Date',
       description: data.description || '',
+      category: data.category || 'Tech',
       content,
     }
   } catch (e) {
