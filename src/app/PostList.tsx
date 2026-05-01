@@ -1,18 +1,7 @@
-"use client";
-
-import { useState } from "react";
 import Link from "next/link";
 import { Post } from "@/lib/markdown";
 
 export default function PostList({ posts }: { posts: Post[] }) {
-  const [activeCategory, setActiveCategory] = useState<"All" | "Story" | "Tech">("All");
-
-  const filteredPosts = activeCategory === "All" 
-    ? posts 
-    : posts.filter(post => post.category === activeCategory);
-
-  const categories = ["All", "Story", "Tech"] as const;
-
   return (
     <div className="w-full">
       <section className="mb-12">
@@ -24,24 +13,8 @@ export default function PostList({ posts }: { posts: Post[] }) {
       </section>
 
       <section>
-        <div className="flex gap-6 mb-8 border-b border-gray-100 pb-1">
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setActiveCategory(cat)}
-              className={`text-sm font-semibold uppercase tracking-widest pb-2 transition-colors ${
-                activeCategory === cat 
-                  ? "text-black border-b-2 border-black" 
-                  : "text-gray-300 hover:text-gray-500"
-              }`}
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
-
         <div className="flex flex-col gap-6">
-          {filteredPosts.map((post) => (
+          {posts.map((post) => (
             <Link 
               href={`/blog/${post.slug}`} 
               key={post.slug} 
