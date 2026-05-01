@@ -11,6 +11,7 @@ export interface Post {
   description: string
   category: "Story" | "Tech"
   content: string
+  readingTime: number
 }
 
 export function getAllPostSlugs() {
@@ -25,6 +26,10 @@ export function getPostBySlug(slug: string): Post | null {
     const fileContents = fs.readFileSync(fullPath, 'utf8')
     const { data, content } = matter(fileContents)
 
+    // Calculate reading time (roughly 200 words per minute)
+    const words = content.trim().split(/\s+/).length
+    const readingTime = Math.ceil(words / 200)
+
     return {
       slug,
       title: data.title || 'Untitled',
@@ -32,6 +37,7 @@ export function getPostBySlug(slug: string): Post | null {
       description: data.description || '',
       category: data.category || 'Tech',
       content,
+      readingTime,
     }
   } catch (e) {
     return null
@@ -50,3 +56,29 @@ export function getAllPosts(): Post[] {
   
   return posts
 }
+
+export interface Heading {
+  level: number
+  text: string
+  id: string
+}
+
+export function extractHeadings(content: string): Heading[] {
+  const headingRegex = /^(#{2,3})\s+(.*)$/gm
+  const headings: Heading[] = []
+  let match
+
+  while ((match = headingRegex.exec(content)) !== null) {
+    const level = match[1].length
+    const text = match[2]
+    const id = text
+      .toLowerCase()
+      .replace(/[^\w\s-]/g, '')
+      .replace(/\s+/g, '-')
+
+    headings.push({ level, text, id })
+  }
+
+  return headings
+}
+
