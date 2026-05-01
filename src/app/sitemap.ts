@@ -1,4 +1,6 @@
 import { MetadataRoute } from "next";
+
+export const dynamic = 'force-static';
 import { getAllPostSlugs } from "@/lib/markdown";
 
 export default function sitemap(): MetadataRoute.Sitemap {
