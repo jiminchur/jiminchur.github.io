@@ -6,10 +6,7 @@ export default function Home() {
 
   return (
     <div className="w-full">
-      <section className="mb-24">
-        <h1 className="text-4xl font-semibold tracking-tight text-black mb-6">
-          I write code and words.
-        </h1>
+      <section className="mb-12">
         <p className="text-gray-600 leading-relaxed text-lg">
           안녕하세요, MinChur입니다.<br/>
           소프트웨어 엔지니어로서 복잡한 문제를 단순하게 풀어내는 데 집중합니다.<br/>
