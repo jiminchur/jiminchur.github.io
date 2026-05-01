@@ -20,17 +20,17 @@ export default function PostList({ posts }: { posts: Post[] }) {
               key={post.slug} 
               className="group flex flex-col sm:flex-row sm:items-center justify-between py-2 -mx-4 px-4 rounded-lg hover:bg-gray-50 transition-colors"
             >
-              <div className="flex items-center gap-3">
-                <span className={`text-[10px] px-2 py-0.5 rounded-full border ${
+              <div className="flex items-center gap-2">
+                <h3 className="text-lg font-medium text-black group-hover:text-gray-600 transition-colors">
+                  {post.title}
+                </h3>
+                <span className={`text-[9px] px-1.5 py-0.5 rounded border leading-none font-medium uppercase tracking-tight ${
                   post.category === "Story" 
                     ? "border-blue-100 text-blue-400 bg-blue-50/30" 
                     : "border-gray-100 text-gray-400 bg-gray-50/30"
                 }`}>
                   {post.category}
                 </span>
-                <h3 className="text-lg font-medium text-black group-hover:text-gray-600 transition-colors">
-                  {post.title}
-                </h3>
               </div>
               <time dateTime={post.date} className="text-sm text-gray-400 mt-1 sm:mt-0 font-mono tracking-tighter">
                 {post.date}
