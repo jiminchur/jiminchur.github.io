@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Post } from "@/lib/markdown";
+import { Post } from "@/lib/posts";
 import { useState, useMemo } from "react";
 import { Search, Filter, Clock } from "lucide-react";
 

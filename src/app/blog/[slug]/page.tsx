@@ -1,16 +1,42 @@
 import { notFound } from "next/navigation";
-import { getPostBySlug, getAllPostSlugs, extractHeadings } from "@/lib/markdown";
+import type { Metadata } from "next";
+import { getPostBySlug, getAllPostSlugs, extractHeadings } from "@/lib/posts";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { CodeBlock } from "@/components/CodeBlock";
 import { ReadingProgressBar } from "@/components/ReadingProgressBar";
+import { ViewCounter } from "@/components/ViewCounter";
 import { Clock } from "lucide-react";
 
+export const revalidate = 60;
+
 export async function generateStaticParams() {
-  const posts = getAllPostSlugs();
-  return posts.map((slug) => ({
-    slug: slug.replace(/\.md$/, ""),
-  }));
+  const slugs = await getAllPostSlugs();
+  return slugs.map((slug) => ({ slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const post = await getPostBySlug(slug);
+
+  if (!post) return {};
+
+  return {
+    title: post.title,
+    description: post.description,
+    alternates: { canonical: `/blog/${post.slug}` },
+    openGraph: {
+      type: "article",
+      title: post.title,
+      description: post.description,
+      url: `/blog/${post.slug}`,
+      publishedTime: post.date,
+    },
+  };
 }
 
 export default async function BlogPost({
@@ -19,7 +45,7 @@ export default async function BlogPost({
   params: Promise<{ slug: string }>;
 }) {
   const resolvedParams = await params;
-  const post = getPostBySlug(resolvedParams.slug);
+  const post = await getPostBySlug(resolvedParams.slug);
 
   if (!post) {
     return notFound();
@@ -42,6 +68,8 @@ export default async function BlogPost({
             <Clock className="w-3.5 h-3.5" />
             <span>{post.readingTime} min read</span>
           </div>
+          <span className="text-gray-300">|</span>
+          <ViewCounter slug={post.slug} initialViews={post.views} />
         </div>
       </header>
 
