@@ -3,7 +3,10 @@
 -- Mirrors the markdown frontmatter the 60 existing posts already use
 -- (title / date / category / description) so the import is lossless.
 
-create extension if not exists pg_trgm;
+-- Extensions live outside `public`: that schema is PostgREST's exposed API
+-- surface, and Supabase's linter flags extensions placed there.
+create schema if not exists extensions;
+create extension if not exists pg_trgm with schema extensions;
 
 -- Admins ---------------------------------------------------------------
 -- Membership table rather than a hardcoded uid, so granting a second
@@ -113,3 +116,13 @@ create policy admins_read_self on public.admins
 
 revoke execute on function public.increment_post_views(text) from public;
 grant execute on function public.increment_post_views(text) to anon, authenticated;
+
+-- Supabase's linter flags both SECURITY DEFINER functions as anon-callable.
+-- Both are deliberate and neither leaks data:
+--
+--   increment_post_views — being callable by logged-out readers is the whole
+--     point; it only bumps a counter on an already-published row.
+--   is_admin — the SELECT policy above calls it, and RLS predicates run as the
+--     querying role, so revoking EXECUTE from anon would break public reads.
+--     It discloses only whether *the caller* is an admin, which the caller
+--     already knows.
