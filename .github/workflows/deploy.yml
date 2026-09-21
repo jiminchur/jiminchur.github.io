@@ -1,8 +1,12 @@
-name: Deploy Next.js site to Pages
+name: Deploy Next.js site to Pages (legacy)
 
+# Superseded by Vercel. Kept for rollback only — the push trigger is removed so
+# Pages and Vercel cannot serve the same content at two URLs, which would split
+# search ranking between them.
+#
+# NOTE: this build needs `output: 'export'` in next.config.ts, which was removed
+# during the Vercel migration. Restore it before running this manually.
 on:
-  push:
-    branches: ["develop"]
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages

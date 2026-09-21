@@ -1,10 +1,11 @@
 import { MetadataRoute } from "next";
+import { getAllPostSlugs } from "@/lib/markdown";
+import { getSiteUrl } from "@/lib/site";
 
 export const dynamic = 'force-static';
-import { getAllPostSlugs } from "@/lib/markdown";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://jiminchur.github.io";
+  const baseUrl = getSiteUrl();
   const postSlugs = getAllPostSlugs();
 
   const blogUrls = postSlugs.map((slug) => ({

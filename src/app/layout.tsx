@@ -4,14 +4,28 @@ import "./globals.css";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { getSiteUrl } from "@/lib/site";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "MinChur's Blog",
+  metadataBase: new URL(getSiteUrl()),
+  title: {
+    default: "MinChur's Blog",
+    template: "%s | MinChur's Blog",
+  },
   description: "Software engineering and thoughts.",
+  alternates: {
+    canonical: "/",
+  },
   icons: {
     icon: "/icon.png",
+  },
+  openGraph: {
+    type: "website",
+    locale: "ko_KR",
+    siteName: "MinChur's Blog",
+    url: "/",
   },
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
